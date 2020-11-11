@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+
+nav.navbar {
+  height: 20vh;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: rgb(255, 102, 112);
+}
+
+.login-button {
+  background-color: rgb(255, 102, 112);
+  color: whitesmoke;
+}
+
+a.nav-link {
+  color: rgb(101, 202, 220);
+  font-size: 1.3rem;
+}
+
+a.nav-link:hover {
+  cursor: pointer;
+  color: rgb(255, 102, 112);
+}
+
+/* Carousel */
+
+.carousel-item {
+  height: 80vh;
+}
+
+/* Features */
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(255, 102, 112);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.features-container {
+  width: 100%;
+}
+
+.features-row {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.features-item {
+  width: 45%;
+  border: solid;
+  border-radius: 1rem;
+  border-width: 0.75rem;
+  border-color: rgb(246, 220, 223);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgb(200, 200, 200);
+}
+
+.features-image {
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.features-item-title {
+  color: rgb(101, 202, 220);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.features-item-content {
+  font-size: 0.85rem;
+}
+
+/* Wave */
+
+.wave-background {
+  margin: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: url(../images/wave.jpg);
+}
+
+.wave-title {
+  color: rgb(101, 202, 220);
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.5rem rgb(200, 200, 200);
+}
+
+.wave-content {
+  color: rgb(255, 102, 112);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.5rem rgb(200, 200, 200);
+}
+
+/* Customer Review */
+
+.customer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
