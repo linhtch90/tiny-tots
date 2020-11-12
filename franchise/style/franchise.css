@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+nav.navbar {
+    height: 20vh;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+    color: rgb(255, 102, 112);
+}
+
+.login-button {
+    background-color: rgb(255, 102, 112);
+    color: whitesmoke;
+}
+
+a.nav-link {
+    color: rgb(26, 35, 126);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+a.nav-link:hover {
+    cursor: pointer;
+    color: rgb(255, 102, 112);
+}
+
+
+/* Footer */
+
+.footer-background {
+    margin: 0;
+    margin-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: url(../images/footer-background.jpg);
+}
+
+.footer-header {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-link {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-link:link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: rgb(255, 102, 112);
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer-icon {
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+}
+
+.footer-icon i:hover {
+    cursor: pointer;
+    color: rgb(255, 102, 112);
+}
