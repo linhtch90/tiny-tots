@@ -44,6 +44,91 @@ a.nav-link:hover {
     color: rgb(255, 102, 112);
 }
 
+/* Franchise Opportunities */
+.features-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(255, 102, 112);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.features-content {
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.opportunity-container {
+    width: 100%;
+}
+
+.opportunity-card-1 {
+    width: 23%;
+    height: 24rem;
+    text-align: justify;
+    padding: 1rem;
+    background-color: rgb(231, 89, 103);
+}
+
+.opportunity-card-2 {
+    width: 23%;
+    height: 24rem;
+    text-align: justify;
+    padding: 1rem;
+    background-color: rgb(118, 181, 167);
+}
+
+.opportunity-card-3 {
+    width: 23%;
+    height: 24rem;
+    text-align: justify;
+    padding: 1rem;
+    background-color: rgb(243, 162, 167);
+}
+
+.opportunity-card-4 {
+    width: 23%;
+    height: 24rem;
+    text-align: justify;
+    padding: 1rem;
+    background-color: rgb(204, 150, 89);
+}
+
+.opportunity-photo {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* Franchise registration */
+
+.franchise-registration-background {
+    width: 100%;
+    height: 42rem;
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.3), rgba(33, 33, 33, 0.3)), url(../images/franchise-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.franchise-content {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(26, 35, 126);
+    margin-bottom: 4rem;
+}
+
+#franchise-registration-form input {
+    margin: 1rem;
+    width: 35rem;
+}
+
+.franchise-registration-button {
+    padding: 0.5rem 3rem;
+    background-color: rgb(231, 89, 103);
+}
 
 /* Footer */
 
