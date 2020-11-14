@@ -1,0 +1,49 @@
+.img-brand {
+  width: 100px;
+  height: 60px;
+}
+.category {
+  padding: 10px;
+}
+
+.div-contain {
+  border: gainsboro solid 1px;
+  padding: 10px;
+  margin: 20px;
+  background: url(./images/products_background.jpg);
+  font-family: "Poppins", sans-serif;
+  color: rgb(194, 107, 121);
+}
+.div-contain1 {
+  padding: 0 0;
+  margin: 20px;
+}
+
+.category > a {
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.5s ease;
+}
+
+.category > a :hover {
+  transform: scale(1.3);
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > [class="col-sm-6 col-md-4"] {
+  display: flex;
+  flex-direction: column;
+}
+.thumbnail {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  margin-bottom: 4rem;
+}
+
+.thumbnail:hover {
+  transform: scale(1.02);
+}
