@@ -1,0 +1,19 @@
+@startwbs
+scale 1.5
+* Homepage
+** Products
+*** Show all products
+*** Filter products by brands
+*** Filter products by categories
+*** Compare any 2 products
+*** Check product details
+**** Add to cart
+***** Checkout
+** News
+** Franchise
+*** Franchise registration
+** Contact Us
+*** Check store locations\nwith Geolocation API\n(Google Maps)
+** Log In
+** Register
+@endwbs
