@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+
+nav.navbar {
+  height: 20vh;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: rgb(255, 102, 112);
+}
+
+.login-button {
+  background-color: rgb(255, 102, 112);
+  color: whitesmoke;
+}
+
+a.nav-link {
+  color: rgb(26, 35, 126);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+a.nav-link:hover {
+  cursor: pointer;
+  color: rgb(255, 102, 112);
+}
+
+/* Sales Call */
+
+#sales-infor .container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sales-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(255, 102, 112);
+  text-align: center;
+}
+
+.sales-content {
+  text-align: center;
+}
+
+.support-item {
+  background-color: white;
+  border: 0.1rem solid black;
+  width: 45%;
+  margin-bottom: -5rem;
+  padding: 0.5rem;
+}
+
+.support-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.support-content {
+  text-align: center;
+}
+
+a.email-sp {
+  color: rgb(26, 35, 126);
+}
+
+a.email-sp:hover {
+  cursor: pointer;
+  color: rgb(255, 102, 112);
+  text-decoration: none;
+}
+
+/* Headquaters */
+
+#headquaters .container {
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  border-top: 0.2rem solid rgb(255, 102, 112);
+  border-bottom: 0.2rem solid rgb(255, 102, 112);
+}
+
+.headquaters-item {
+  width: 70%;
+}
+
+.headquaters-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(255, 102, 112);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#headquaters-map {
+  width: 100%;
+  height: 26.7rem;
+  margin: 1rem 0rem;
+}
+
+/* Stories */
+
+#stores .container {
+  border: 0.1rem solid black;
+  margin-top: 3.6rem;
+  margin-bottom: 3rem;
+}
+
+.stores-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(255, 102, 112);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.stores-list-container {
+  margin: 1rem 0rem;
+}
+
+.store-add {
+  width: 100%;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.store-add > h4 {
+  font-weight: 500;
+}
+
+.store-add > p {
+  margin: 0.5rem 0rem;
+}
+
+.stores-map-container {
+  width: 100%;
+  height: 40rem;
+}
+
+#stores-map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Footer */
+
+.footer-background {
+  margin: 0;
+  margin-top: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: url(../images/footer-background.jpg);
+}
+
+.footer-header {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-link {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.footer-link:link {
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: rgb(255, 102, 112);
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+}
+
+.footer-icon i:hover {
+  cursor: pointer;
+  color: rgb(255, 102, 112);
+}
