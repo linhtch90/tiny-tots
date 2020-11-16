@@ -1,0 +1,10 @@
+@startuml
+scale 1.5
+start
+if (Buyer has an account?) then (Yes)
+	:Log In;
+else (No)
+	:Register;
+endif	
+stop
+@enduml

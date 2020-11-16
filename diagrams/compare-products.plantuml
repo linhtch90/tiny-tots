@@ -1,0 +1,11 @@
+@startuml
+scale 1.5
+start
+:Products Page;
+repeat :User choose a product\nfor comparison;
+backward:Notify user to choose\n1 more product;
+repeat while (Enough 2 products\nfor comparison?)
+->Yes;
+:Show products comparison table;
+stop
+@enduml

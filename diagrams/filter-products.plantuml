@@ -1,0 +1,12 @@
+@startuml
+scale 1.5
+start
+:Products Page;
+:User click on a brand name/category;
+partition Filtering {
+	:Read the chosen brand name/category;
+	:Iterate through products database and pick up\nproducts having the same brand name/category;
+}
+:Show filtered products;
+stop
+@enduml

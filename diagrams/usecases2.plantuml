@@ -1,0 +1,30 @@
+@startuml
+scale 1.5
+left to right direction
+actor Buyer
+actor Franchisee
+rectangle "Tiny Tots Website" {
+	usecase "Log In/Register" as Login	
+	usecase "Browse for all products\nin database" as BrowseProducts
+	usecase "Filter products\nby categories/brands" as Filter
+	usecase "Compare any 2 products" as Compare
+	usecase "Check product details" as ProductDetails
+	usecase "Add to cart" as Cart
+	usecase "Check out" as Checkout
+	usecase "Contact Tiny Tots\nheadquarters and retail stores" as Contact
+	usecase "See related news" as News
+	usecase "Franchise registration"  as Franchise
+}
+Franchisee --> Contact
+Franchisee --> News
+Franchisee --> Franchise
+Buyer --> Login
+Buyer --> Contact
+Buyer --> News
+Buyer --> BrowseProducts
+Buyer --> Compare
+Buyer --> Filter
+Buyer --> ProductDetails
+Buyer --> Cart
+Buyer --> Checkout
+@enduml
