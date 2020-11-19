@@ -1,159 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TinyTots Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyTots Products</title>
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    
-    <!-- Google Font - Poppin -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Home CSS of Linh -->
-    <link rel="stylesheet" href="./products/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-    <!-- Product CSS -->
-    <link rel="stylesheet" href="./products/products.css">
+  <!-- Google Font - Poppin -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
 
-    <!-- AOS Animation CSS anh Linh -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
-    
-    <!-- Boostrap -->
-     <!-- Bootstrap CSS anh Linh -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-   
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Home CSS of Linh -->
+  <link rel="stylesheet" href="./products/home.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Product CSS -->
+  <link rel="stylesheet" href="./products/products.css">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    <!-- Toastr -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-    
+  <!-- AOS Animation CSS anh Linh -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
+  <!-- Boostrap -->
+  <!-- Bootstrap CSS anh Linh -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Toastr -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 
-<body onload="loadingProducts()"> 
+<body onload="loadingProducts()">
 
 
 
   <!-- Navitation bar from homepage -->
   <section id="navigation">
     <nav class="navbar">
-        <div class="container">
-            <div class="d-flex flex-row align-items-center justify-content-center w-100">
-                <img class="logo" alt="logo" src="./products/images/tiny-tots-logo.jpg" />
-                <div class="d-flex flex-column align-items-center justify-content-center w-100">
-                    <div class="d-flex flex-row align-items-center justify-content-end w-100">
-                        <input class="form-control mr-sm-4 w-25" type="search" placeholder="Search" aria-label="Search" />
-                        <button type="button" class="btn login-button mr-sm-4">
-                            Join Us
-                        </button>
-                        <i class="fas fa-shopping-cart cart-icon"></i>
-                    </div>
-                    <div class="d-flex flex-row align-items-center justify-content-end w-100">
-                        <div class="navbar">
-                            <ul class="navbar-nav d-flex flex-row">
-                                <li class="nav-item ml-sm-5">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item ml-sm-5">
-                                    <a class="nav-link" href="./products.html">Products</a>
-                                </li>
-                                <li class="nav-item ml-sm-5">
-                                    <a class="nav-link" href="#">News</a>
-                                </li>
-                                <li class="nav-item ml-sm-5">
-                                    <a class="nav-link" href="./franchise.html">Franchise</a>
-                                </li>
-                                <li class="nav-item ml-sm-5">
-                                    <a class="nav-link" href="./contactus.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="d-flex flex-row align-items-center justify-content-center w-100">
+          <img class="logo" alt="logo" src="./products/images/tiny-tots-logo.jpg" />
+          <div class="d-flex flex-column align-items-center justify-content-center w-100">
+            <div class="d-flex flex-row align-items-center justify-content-end w-100">
+              <input class="form-control mr-sm-4 w-25" type="search" placeholder="Search" aria-label="Search" />
+              <button type="button" class="btn login-button mr-sm-4">
+                Join Us
+              </button>
+              <a href="./cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a>
             </div>
+            <div class="d-flex flex-row align-items-center justify-content-end w-100">
+              <div class="navbar">
+                <ul class="navbar-nav d-flex flex-row">
+                  <li class="nav-item ml-sm-5">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item ml-sm-5">
+                    <a class="nav-link" href="./products.html">Products</a>
+                  </li>
+                  <li class="nav-item ml-sm-5">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item ml-sm-5">
+                    <a class="nav-link" href="./franchise.html">Franchise</a>
+                  </li>
+                  <li class="nav-item ml-sm-5">
+                    <a class="nav-link" href="./contactus.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </nav>
-</section> <!-- end navigation section -->
+  </section> <!-- end navigation section -->
 
 
 
 
 
 
-  <section id="brand"> <!-- start Brands section -->
-    <div class="container div-contain">
-      <div class="col-xs-12">
-        <h1>BRANDS</h1>
-        <h4>Browse our full range of baby products from trusted Brands</h4> <br>
+  <section id="brand" data-aos="fade-up">
+    <!-- start Brands section -->
+    <!-- start Brands section -->
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center div-contain">
+        <div class="text-center">
+          <h1>BRANDS</h1>
+          <h4>Browse our full range of baby products from trusted Brands</h4> <br>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center brand-container">
+          <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
+            <a href="#link" onclick="product('Johnson')"><img src="./products/images/Brands/johnson.png"
+                class="img-brand zoom" alt=""></a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
+            <a href="#link" onclick="product('Pampers')"><img src="./products/images/brands/pamper.png"
+                class="img-brand " alt=""></a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
+            <a href="#link" onclick="product('Lego')"><img src="./products/images/brands/lego.png" class="img-brand"
+                alt=""></a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
+            <a href="#link" onclick="product('Pigeon')"><img src="./products/images/brands/pigeon.png" class="img-brand"
+                alt=""></a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
+            <a href="#link" onclick="product('Kids')"><img src="./products/images/brands/kids.png" class="img-brand"
+                alt=""></a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
+            <a href="#link" onclick="product('Baby Comfy')"><img src="./products/images/brands/babycomfy.png"
+                class="img-brand" alt=""></a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
-        <a href="#link" onclick="product('Johnson')" ><img src="./products/images/Brands/johnson.png" class="img-brand zoom" alt="" ></a>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
-        <a href="#link" onclick="product('Pampers')" ><img src="./products/images/Brands/pamper.png" class="img-brand " alt="" ></a>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
-        <a href="#link" onclick="product('Lego')" ><img src="./products/images/Brands/lego.png" class="img-brand" alt="" ></a>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
-        <a href="#link" onclick="product('Pigeon')" ><img src="./products/images/Brands/pigeon.png" class="img-brand" alt="" ></a>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
-        <a href="#link" onclick="product('Kids')" ><img src="./products/images/Brands/kids.png" class="img-brand" alt="" ></a>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-12 category text-center">
-        <a href="#link" onclick="product('Baby Comfy')" ><img src="./products/images/Brands/babycomfy.png" class="img-brand" alt="" ></a>
-      </div>
-    </div>  
+
+    </div>
   </section> <!-- end Brands section -->
 
-  <section id="category"> <!-- start Categories section -->
-    <div class="container div-contain">
-      <div class="col-xs-12">
-        <h2>ALL CATEGORIES</h2> <br>
+  <section id="category" data-aos="fade-up">
+    <!-- start Categories section -->
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center div-contain">
+        <div class="text-center">
+          <h1>ALL CATEGORIES</h1>
+          <h4>Browse our full categories of baby products</h4>
+          <br>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center brand-container">
+          <div class="col-md-3 col-sm-6 col-xs-12 category " onclick="product('Baby Care')">
+            <a href="#link" onclick="product('Baby Care')">Baby Care</a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 category" onclick="product('Fashion')">
+            <a href="#link" onclick="product('Fashion')">Fashion</a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 category" onclick="product('Toys')">
+            <a href="#link" onclick="product('Toy')">Toys</a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 category" onclick="product('Wellness and Hygiene')">
+            <a href="#link" onclick="product('Wellness and Hygiene')">Wellness and Hygiene</a>
+          </div>
+        </div>
       </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 category " onclick="product('Baby Care')" >
-          <a href="#link" onclick="product('Baby Care')">Baby Care</a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 category" onclick="product('Fashion')" >
-          <a href="#link" onclick="product('Fashion')">Fashion</a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 category" onclick="product('Toys')" >
-          <a href="#link" onclick="product('Toy')">Toys</a>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 category" onclick="product('Wellness and Hygiene')" >
-          <a href="#link" onclick="product('Wellness and Hygiene')">Wellness and Hygiene</a>
-        </div>
-    </div>     
   </section> <!-- End Categories section -->
-  
-  <section> <!-- Start Products link section -->
+
+  <section data-aos="fade-left">
+    <!-- Start Products link section -->
     <div class="container div-contain1" id="link">
       <ul class="breadcrumb">
-        <li><a href="products.html">OUR PRODUCTS</a></li>
+        <li><a onclick="loadingProducts()" href="#">OUR PRODUCTS > &nbsp;</a></li>
         <li class="active" id="active_page"></li>
       </ul>
-      </div>
+    </div>
   </section> <!-- End Products links section -->
 
-  <section> <!--  start product cards section-->
-    <div class="container" > 
-      <div class="row">
-      <div class="content_product row d-flex flex-wrap text-center" id="product-list"></div>
-    </div>
+  <section>
+    <!--  start product cards section-->
+    <div class="container">
+      <div class="d-flex flex-row flex-wrap justify-content-center align-items-center item-container" id="product-list">
+      </div>
   </section> <!-- End Products cards section -->
-  
+
   <!-- Comparing modal -->
   <section id="comparing-modal">
     <div class="container modal-content">
@@ -187,76 +207,120 @@
             <td id="compare-price-2"></td>
           </tr>
         </tbody>
-      </table>      
+      </table>
+
     </div>
-  </section>  
+
+  </section><!-- Comparing modal -->
+  <section id="comparing-modal">
+    <div class="container modal-content">
+      <span id="compare-modal-close">&times;</span>
+      <table class="table comparing-table">
+        <thead></thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td id="compare-photo-1"></td>
+            <td id="compare-photo-2"></td>
+          </tr>
+          <tr>
+            <th scope="row">Product Name</th>
+            <td id="compare-name-1"></td>
+            <td id="compare-name-2"></td>
+          </tr>
+          <tr>
+            <th scope="row">Category</th>
+            <td id="compare-category-1"></td>
+            <td id="compare-category-2"></td>
+          </tr>
+          <tr>
+            <th scope="row">Brand</th>
+            <td id="compare-brand-1"></td>
+            <td id="compare-brand-2"></td>
+          </tr>
+          <tr>
+            <th scope="row">Price</th>
+            <td id="compare-price-1"></td>
+            <td id="compare-price-2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section> <!-- End comparing section -->
 
 
 
-   <!-- Footer from homepage -->
-   <section id="footer">
+
+  <!-- Footer -->
+  <section id="footer">
     <div class="container-fluid footer-background">
-        <div class="container">
-            <div class="d-flex flex-row justify-content-center align-items-center">
-                <!-- Shop -->
-                <div class="col-sm-4 justify-content-begin align-items-center">
-                    <p class="footer-header">Shop</p>
-                    <ul class="footer-list">
-                        <li><a href="" class="footer-link">Sale</a></li>
-                        <li><a href="" class="footer-link">Baby</a></li>
-                        <li><a href="" class="footer-link">Boy Clothing</a></li>
-                        <li><a href="" class="footer-link">Girl Clothing</a></li>
-                        <li><a href="" class="footer-link">Formal Wear</a></li>
-                    </ul>
-                </div>
-                <!-- Support -->
-                <div class="col-sm-4 justify-content-begin align-items-center">
-                    <p class="footer-header">Support</p>
-                    <ul class="footer-list">
-                        <li><a href="" class="footer-link">Custom Order</a></li>
-                        <li><a href="" class="footer-link">Delivery</a></li>
-                        <li><a href="" class="footer-link">Returns</a></li>
-                        <li><a href="" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- Footer Logo -->
-                <div class="col-sm-4 justify-content-center align-items-center">
-                    <img alt="footer-logo" src="./products/images/tiny-tots-logo.jpg" class="footer-logo" />
-                    <p class="footer-info"><b>Address:</b> 1 Phan Dang Luu Street, Hai Chau District, Danang City, Vietnam</p>
-                    <p class="footer-info"><b>Hotline:</b> +84 236 3681 666</p>
-                    <p class="footer-info"><b>Email:</b> info@tinytots.com</p>
-                    <p class="footer-icon"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i><i class="fab fa-instagram-square"></i><i class="fab fa-youtube-square"></i></p>
-                </div>
+      <div class="container">
+        <div class="d-flex flex-row justify-content-center">
+          <div class="col-sm-3 justify-content-begin align-items-start">
+            <div class="d-flex flex-column justify-content-center align-items-begin">
+              <img alt="footer-logo" src="./home/images/tiny-tots-logo.png" class="footer-logo">
             </div>
+          </div>
+          <div class="col-sm-3 justify-content-begin align-items-center">
+            <p class="footer-header">Address</p>
+            <p class="footer-info">1 Phan Dang Luu Street, Hai Chau District,
+              Danang City, Vietnam
+            </p>
+          </div>
+          <div class="col-sm-3 justify-content-begin align-items-center">
+            <p class="footer-header">Contact</p>
+            <p class="footer-info">Email: info@tinytots.com</p>
+            <p class="footer-info">Hotline: +84 236 3681 666</p>
+            <p class="footer-info">Fax: +84 236 3681 777</p>
+          </div>
+          <div class="col-sm-3 justify-content-begin align-items-center">
+            <p class="footer-header">Links</p>
+            <div class="d-flex flex-row justify-content-center align-items-start">
+              <div class="col-sm-6 justify-content-begin align-items-center">
+                <p class="footer-info"><a href="index.html" class="footer-link">Home</a></p>
+                <p class="footer-info"><a href="products.html" class="footer-link">Products</a></p>
+                <p class="footer-info"><a href="news.html" class="footer-link">News</a></p>
+              </div>
+              <div class="col-sm-6 justify-content-begin align-items-center">
+                <p class="footer-info"><a href="franchise.html" class="footer-link">Franchise</a></p>
+                <p class="footer-info"><a href="contactus.html" class="footer-link">Contact Us</a></p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="d-flex flex-row justify-content-between align-items-center" style="margin-top: 1rem;">
+          <div class="d-flex">
+            <p class="footer-info">@ Copyright 2020 by Team</p>
+          </div>
+          <div class="d-flex">
+            <p class="footer-icon">
+              <i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i><i
+                class="fab fa-instagram-square"></i><i class="fab fa-youtube-square"></i>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section> <!-- End Footer -->
+  </section> <!-- End Footer -->
 
 
 
-   
-  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-  <!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script> -->
-    
-    <!-- AOS Animation JS -->
+
+  <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
   <!-- Toastr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 
   <!-- User-defined JS -->
   <!-- <script src="./home/js/home.js"></script> -->
   <script src="./products/products.js"></script>
   <script src="./products/home.js"></script>
+  <script src="./cart/cart.js"></script>
+  <script src="./productdetail/productdetail.js"></script>
 </body>
+
+</html>
+aaa
+bbb
