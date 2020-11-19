@@ -25,7 +25,7 @@ nav.navbar {
 
 .cart-icon {
   font-size: 1.5rem;
-  color: rgb(238, 212, 214);
+  color: rgb(255, 102, 112);
 }
 
 .login-button {
@@ -34,7 +34,7 @@ nav.navbar {
 }
 
 a.nav-link {
-  color: #029899;
+  color: rgb(26, 35, 126);
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -96,7 +96,7 @@ a.nav-link:hover {
 }
 
 .features-item-title {
-  color: #029899;
+  color: rgb(26, 35, 126);
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -117,7 +117,7 @@ a.nav-link:hover {
 }
 
 .wave-title {
-  color: #029899;
+  color: rgb(26, 35, 126);
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
@@ -138,7 +138,7 @@ a.nav-link:hover {
   width: 30%;
   height: 25rem;
   border: solid;
-  border-color: #029899;
+  border-color: rgb(26, 35, 126);
   border-radius: 1rem;
   border-width: 0.75rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgb(200, 200, 200);
@@ -186,14 +186,6 @@ a.nav-link:hover {
   width: 20%;
 }
 
-#instagram img {
-  opacity: 0.9;
-}
-
-#instagram img:hover {
-  opacity: 1;
-}
-
 /* About */
 
 .about-content {
@@ -206,15 +198,14 @@ a.nav-link:hover {
 .footer-background {
   margin: 0;
   margin-top: 6rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
-  background: url(../../home/images/footer-background.jpg);
+  background: url(./images/footer-background.jpg);
 }
 
 .footer-header {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  color: #ff6a5f;
 }
 
 .footer-list {
@@ -222,10 +213,9 @@ a.nav-link:hover {
 }
 
 .footer-link {
-  color: #ff6a5f;
-  font-size: 0.8rem;
+  color: black;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin: 0rem -0.7rem;
 }
 
 .footer-link:link {
@@ -233,31 +223,21 @@ a.nav-link:hover {
 }
 
 .footer-link:hover {
-  color: #029899;
+  color: rgb(255, 102, 112);
 }
 
 .footer-logo {
   width: 100px;
   height: 100px;
-}
-
-.footer-logo-text {
-  width: 70%;
-}
-
-.footer-info {
-  font-size: 0.8rem;
-  color: #ff6a5f;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .footer-icon {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   letter-spacing: 1rem;
-  color: #ff6a5f;
 }
 
 .footer-icon i:hover {
   cursor: pointer;
-  color: #029899;
+  color: rgb(255, 102, 112);
 }
