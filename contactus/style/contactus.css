@@ -29,7 +29,7 @@ nav.navbar {
 }
 
 a.nav-link {
-  color: rgb(26, 35, 126);
+  color: #029899;
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -75,7 +75,7 @@ a.nav-link:hover {
 }
 
 a.email-sp {
-  color: rgb(26, 35, 126);
+  color: #029899;
 }
 
 a.email-sp:hover {
@@ -112,6 +112,21 @@ a.email-sp:hover {
   margin: 1rem 0rem;
 }
 
+.card-link {
+  color: #029899;
+}
+
+.card-link:hover {
+  color: #ff6a5f;
+}
+
+.mailtoui {
+  color: #029899;
+}
+
+.mailtoui:hover {
+  color: #ff6a5f;
+}
 /* Stories */
 
 #stores .container {
@@ -162,14 +177,15 @@ a.email-sp:hover {
 .footer-background {
   margin: 0;
   margin-top: 6rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
-  background: url(../images/footer-background.jpg);
+  background: url(../../home/images/footer-background.jpg);
 }
 
 .footer-header {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 800;
+  color: #ff6a5f;
 }
 
 .footer-list {
@@ -177,9 +193,10 @@ a.email-sp:hover {
 }
 
 .footer-link {
-  color: black;
-  font-size: 0.9rem;
+  color: #ff6a5f;
+  font-size: 0.8rem;
   font-weight: 600;
+  margin: 0rem -0.7rem;
 }
 
 .footer-link:link {
@@ -187,21 +204,31 @@ a.email-sp:hover {
 }
 
 .footer-link:hover {
-  color: rgb(255, 102, 112);
+  color: #029899;
 }
 
 .footer-logo {
   width: 100px;
   height: 100px;
-  margin-bottom: 1rem;
+}
+
+.footer-logo-text {
+  width: 70%;
+}
+
+.footer-info {
+  font-size: 0.8rem;
+  color: #ff6a5f;
+  margin: 0;
 }
 
 .footer-icon {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 1rem;
+  color: #ff6a5f;
 }
 
 .footer-icon i:hover {
   cursor: pointer;
-  color: rgb(255, 102, 112);
+  color: #029899;
 }

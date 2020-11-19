@@ -10,10 +10,19 @@
   border: gainsboro solid 1px;
   padding: 10px;
   margin: 20px;
-  background: url(./images/products_background.jpg);
+
   font-family: "Poppins", sans-serif;
   color: rgb(194, 107, 121);
 }
+
+.brand-bg {
+  background: url(./images/brand-background.jpg);
+}
+
+.category-bg {
+  background: url(./images/product-background.jpg);
+}
+
 .div-contain1 {
   padding: 0 0;
   margin: 20px;

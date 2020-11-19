@@ -1,180 +1,197 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
-    background-color: white;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .container-fluid {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation */
 
 nav.navbar {
-    height: 20vh;
+  height: 20vh;
 }
 
 .logo {
-    width: 110px;
-    height: 110px;
+  width: 110px;
+  height: 110px;
 }
 
 .cart-icon {
-    font-size: 1.5rem;
-    color: rgb(255, 102, 112);
+  font-size: 1.5rem;
+  color: rgb(255, 102, 112);
 }
 
 .login-button {
-    background-color: rgb(255, 102, 112);
-    color: whitesmoke;
+  background-color: rgb(255, 102, 112);
+  color: whitesmoke;
 }
 
 a.nav-link {
-    color: rgb(26, 35, 126);
-    font-size: 1.5rem;
-    font-weight: 800;
+  color: #029899;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 a.nav-link:hover {
-    cursor: pointer;
-    color: rgb(255, 102, 112);
+  cursor: pointer;
+  color: rgb(255, 102, 112);
 }
 
 /* Franchise Opportunities */
 .features-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: rgb(255, 102, 112);
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(255, 102, 112);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .features-content {
-    font-size: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 4rem;
-    text-align: center;
+  font-size: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 .opportunity-container {
-    width: 100%;
+  width: 100%;
 }
 
 .opportunity-card-1 {
-    width: 23%;
-    height: 24rem;
-    text-align: justify;
-    padding: 1rem;
-    background-color: rgb(231, 89, 103);
+  width: 23%;
+  height: 24rem;
+  text-align: justify;
+  padding: 1rem;
+  background-color: rgb(231, 89, 103);
 }
 
 .opportunity-card-2 {
-    width: 23%;
-    height: 24rem;
-    text-align: justify;
-    padding: 1rem;
-    background-color: rgb(118, 181, 167);
+  width: 23%;
+  height: 24rem;
+  text-align: justify;
+  padding: 1rem;
+  background-color: rgb(118, 181, 167);
 }
 
 .opportunity-card-3 {
-    width: 23%;
-    height: 24rem;
-    text-align: justify;
-    padding: 1rem;
-    background-color: rgb(243, 162, 167);
+  width: 23%;
+  height: 24rem;
+  text-align: justify;
+  padding: 1rem;
+  background-color: rgb(243, 162, 167);
 }
 
 .opportunity-card-4 {
-    width: 23%;
-    height: 24rem;
-    text-align: justify;
-    padding: 1rem;
-    background-color: rgb(204, 150, 89);
+  width: 23%;
+  height: 24rem;
+  text-align: justify;
+  padding: 1rem;
+  background-color: rgb(204, 150, 89);
 }
 
 .opportunity-photo {
-    width: 100%;
-    margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 /* Franchise registration */
 
 .franchise-registration-background {
-    width: 100%;
-    height: 42rem;
-    background: linear-gradient(0deg, rgba(33, 33, 33, 0.3), rgba(33, 33, 33, 0.3)), url(../images/franchise-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 0;
+  width: 100%;
+  height: 42rem;
+  background: linear-gradient(
+      0deg,
+      rgba(33, 33, 33, 0.3),
+      rgba(33, 33, 33, 0.3)
+    ),
+    url(../images/franchise-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
 }
 
 .franchise-content {
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(26, 35, 126);
-    margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #029899;
+  margin-bottom: 4rem;
 }
 
 #franchise-registration-form input {
-    margin: 1rem;
-    width: 35rem;
+  margin: 1rem;
+  width: 35rem;
 }
 
 .franchise-registration-button {
-    padding: 0.5rem 3rem;
-    background-color: rgb(231, 89, 103);
+  padding: 0.5rem 3rem;
+  background-color: rgb(231, 89, 103);
 }
 
 /* Footer */
 
 .footer-background {
-    margin: 0;
-    margin-top: 6rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background: url(../images/footer-background.jpg);
+  margin: 0;
+  margin-top: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background: url(../../home/images/footer-background.jpg);
 }
 
 .footer-header {
-    font-size: 1.2rem;
-    font-weight: 800;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ff6a5f;
 }
 
 .footer-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .footer-link {
-    color: black;
-    font-size: 0.9rem;
-    font-weight: 600;
+  color: #ff6a5f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0rem -0.7rem;
 }
 
 .footer-link:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-link:hover {
-    color: rgb(255, 102, 112);
+  color: #029899;
 }
 
 .footer-logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
+  width: 100px;
+  height: 100px;
+}
+
+.footer-logo-text {
+  width: 70%;
+}
+
+.footer-info {
+  font-size: 0.8rem;
+  color: #ff6a5f;
+  margin: 0;
 }
 
 .footer-icon {
-    font-size: 2.5rem;
-    letter-spacing: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+  color: #ff6a5f;
 }
 
 .footer-icon i:hover {
-    cursor: pointer;
-    color: rgb(255, 102, 112);
+  cursor: pointer;
+  color: #029899;
 }
