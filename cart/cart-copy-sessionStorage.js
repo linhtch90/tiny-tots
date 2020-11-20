@@ -9,8 +9,8 @@ let cartItems = [];
 let addCartItems = [];
 
 $(document).ready(function () {
-  if (localStorage["cart-items"] != null) {
-    cartItems = JSON.parse(localStorage["cart-items"].toString());
+  if (sessionStorage["cart-items"] != null) {
+    cartItems = JSON.parse(sessionStorage["cart-items"].toString());
   }
   displayCartItems();
 });
@@ -58,7 +58,7 @@ function addToCart(ID) {
 
   //console.log(cartItems);
 
-  localStorage["cart-items"] = JSON.stringify(cartItems);
+  sessionStorage["cart-items"] = JSON.stringify(cartItems);
 
   displayCartItems();
 }
@@ -66,8 +66,8 @@ function addToCart(ID) {
 function displayCartItems() {
   var firstBlock = "";
   var total = 0;
-  if (localStorage["cart-items"] != null) {
-    cartItems = JSON.parse(localStorage["cart-items"].toString());
+  if (sessionStorage["cart-items"] != null) {
+    cartItems = JSON.parse(sessionStorage["cart-items"].toString());
     for (var i = 0; i < cartItems.length; i++) {
       //document.getElementById("Cart").innerHTML +=
       firstBlock +=
@@ -243,8 +243,8 @@ function minus(id) {
       cartItems[i].Quantity = a;
     }
   }
-  localStorage["cart-items"] = JSON.stringify(cartItems);
-  cartItems = JSON.parse(localStorage["cart-items"].toString());
+  sessionStorage["cart-items"] = JSON.stringify(cartItems);
+  cartItems = JSON.parse(sessionStorage["cart-items"].toString());
   displayCartItems();
 }
 
@@ -256,8 +256,8 @@ function add(id) {
       cartItems[i].Quantity = b;
     }
   }
-  localStorage["cart-items"] = JSON.stringify(cartItems);
-  cartItems = JSON.parse(localStorage["cart-items"].toString());
+  sessionStorage["cart-items"] = JSON.stringify(cartItems);
+  cartItems = JSON.parse(sessionStorage["cart-items"].toString());
   displayCartItems();
 }
 
@@ -270,8 +270,8 @@ function removeItem(id) {
       cartItems.splice(i, 1);
     }
   }
-  localStorage["cart-items"] = JSON.stringify(cartItems);
-  cartItems = JSON.parse(localStorage["cart-items"].toString());
+  sessionStorage["cart-items"] = JSON.stringify(cartItems);
+  cartItems = JSON.parse(sessionStorage["cart-items"].toString());
   displayCartItems();
 }
 

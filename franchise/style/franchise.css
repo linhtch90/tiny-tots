@@ -28,6 +28,14 @@ nav.navbar {
   color: rgb(255, 102, 112);
 }
 
+.cart-category {
+  text-decoration: none;
+  text-align: center;
+  color: #029899;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .login-button {
   background-color: rgb(255, 102, 112);
   color: whitesmoke;

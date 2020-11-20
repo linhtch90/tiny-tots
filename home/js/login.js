@@ -39,7 +39,12 @@ const login = () => {
 const checkLogin = () => {
   const checkUsername = localStorage.getItem("userName");
   const checkPassword = localStorage.getItem("password");
-  if (checkUsername !== "" && checkPassword !== "") {
+  if (
+    checkUsername !== "" &&
+    checkUsername !== null &&
+    checkPassword !== "" &&
+    checkPassword !== null
+  ) {
     username = checkUsername;
     password = checkPassword;
     isLogin = true;
@@ -53,10 +58,21 @@ const checkLogin = () => {
   return isLogin;
 };
 
+const checkCart = () => {
+  let inCart = JSON.parse(localStorage.getItem("cart-items"));
+  if (inCart.length > 0) {
+    document.getElementById("cart").innerHTML +=
+      '<span class="cart-category">&nbsp;&nbsp;Cart: ' +
+      inCart.length +
+      "</span>";
+  }
+};
+
 const logout = () => {
-  localStorage.setItem("userName", "");
-  localStorage.setItem("password", "");
-  localStorage.setItem("loginStatus", "false");
+  // localStorage.setItem("userName", "");
+  // localStorage.setItem("password", "");
+  // localStorage.setItem("loginStatus", "false");
+  localStorage.clear();
   loginButton.style.display = "block";
   logoutButton.innerHTML = "<i class='far fa-user'></i> " + username;
   logoutButton.style.display = "none";

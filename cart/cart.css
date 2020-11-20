@@ -101,3 +101,12 @@ input[type="number"] {
 #user-logout-button {
   display: none;
 }
+
+/* Number on Cart Icon */
+.cart-category {
+  text-decoration: none;
+  text-align: center;
+  color: #029899;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
