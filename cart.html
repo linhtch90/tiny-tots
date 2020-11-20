@@ -56,8 +56,8 @@
     />
   </head>
 
-  <body>
-    <!-- Navitation bar from homepage -->
+  <body onload="checkLogin()">
+    <!-- Navitation bar -->
     <section id="navigation">
       <nav class="navbar">
         <div class="container">
@@ -67,7 +67,7 @@
             <img
               class="logo"
               alt="logo"
-              src="./products/images/tiny-tots-logo.jpg"
+              src="./home/images/tiny-tots-logo.jpg"
             />
             <div
               class="d-flex flex-column align-items-center justify-content-center w-100"
@@ -109,6 +109,7 @@
                     >
                   </div>
                   <!-- END Logout button -->
+                </div>
                 <a href="./cart.html"
                   ><i class="fas fa-shopping-cart cart-icon"></i
                 ></a>
@@ -122,10 +123,10 @@
                       <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item ml-sm-5">
-                      <a class="nav-link" href="./products.html">Product</a>
+                      <a class="nav-link" href="./products.html">Products</a>
                     </li>
                     <li class="nav-item ml-sm-5">
-                      <a class="nav-link" href="#">News</a>
+                      <a class="nav-link" href="./news.html">News</a>
                     </li>
                     <li class="nav-item ml-sm-5">
                       <a class="nav-link" href="./franchise.html">Franchise</a>

@@ -27,7 +27,7 @@
     <title>Tiny Tots - Baby and Kids Clothes - Baby Clothing Online</title>
   </head>
 
-  <body>
+  <body onload="checkLogin()">
     <!-- Navitation bar -->
     <section id="navigation">
       <nav class="navbar">
@@ -52,10 +52,38 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button type="button" class="btn login-button mr-sm-4">
+                <!-- Login Button -->
+                <button
+                  type="button"
+                  class="btn login-button mr-sm-4"
+                  onclick="login()"
+                  id="user-login-button"
+                >
                   Join Us
                 </button>
-                <i class="fas fa-shopping-cart cart-icon"></i>
+                <!-- Logout Button -->
+                <div class="dropdown">
+                  <button
+                    class="btn login-button dropdown-toggle"
+                    type="button"
+                    id="user-logout-button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  ></button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#" onclick="logout()"
+                      ><i class="fas fa-sign-out-alt"></i> Log out</a
+                    >
+                  </div>
+                  <!-- END Logout button -->
+                </div>
+                <a href="./cart.html"
+                  ><i class="fas fa-shopping-cart cart-icon"></i
+                ></a>
               </div>
               <div
                 class="d-flex flex-row align-items-center justify-content-end w-100"
@@ -88,83 +116,158 @@
 
     <!-- TOP NEWS -->
     <section id="top-news">
-        <div class="container">
-            <div class="d-flex flex-row justify-content-around">
-                <!--LEFT BLOCK-->
-                <div class="d-flex flex-column left-block">
-                    <!--Video-->
-                    <div class="video-container">
-                        <video autoplay loop controls class="video-news">
-                            <source src="./news/video/Child development stages - Baby milestones of Gross motor development.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <!--The Lastest-->
-                    <h5 style="margin-top: 1rem;">The Lastest</h5>
-                    <div class="media border p-3">
-                        <img src="./news/images/news-avatar-1.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                        <div class="media-body">
-                          <p><i>Posted on November 19, 2020</i></p>
-                          <p>26 Products Are Finalists for Kind+Jugend Innovation Awards.</p>
-                        </div>
-                    </div>
-                    <div class="media border p-3">
-                        <img src="./news/images/news-avatar-2.jpg" alt="Prince Lina" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                        <div class="media-body">
-                        <p><i>Posted on November 05, 2020</i></p>
-                          <p>Children’s and Products Create Sophisticated, Playful Resources.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--RIGHT BLOCK-->
-                <div class="d-flex flex-column right-block">
-                    <!--Card 1 & 2-->
-                    <div class="d-flex flex-row">
-                        <div class="card" >
-                            <img class="card-img-top" src="./news/images/product-news.jpg" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Hot Products</h4>                        
-                                <a href="#" class="btn btn-primary">See more</a>
-                            </div>
-                        </div>       
-                        <div class="card" >
-                            <img class="card-img-top" src="./news/images/events-news.jpg" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Events</h4>
-                                <a href="#" class="btn btn-primary">See more</a>  
-                            </div>    
-                        </div>     
-                    </div>
-                    <!--Card 3 & 4-->
-                    <div class="d-flex flex-row">
-                        <div class="card" >
-                            <img class="card-img-top" src="./news/images/family-news.jpg" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Family Time</h4>                        
-                                <a href="#" class="btn btn-primary">See more</a>
-                            </div>
-                        </div>        
-                        <div class="card" >
-                            <img class="card-img-top" src="./news/images/books-news.jpg" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Books</h4>
-                                <a href="#" class="btn btn-primary">See more</a>  
-                            </div>    
-                        </div> 
-                    </div>
-                </div>
+      <div class="container">
+        <div class="d-flex flex-row justify-content-around">
+          <!--LEFT BLOCK-->
+          <div class="d-flex flex-column left-block">
+            <!--Video-->
+            <div class="video-container">
+              <video autoplay loop controls class="video-news">
+                <source
+                  src="./news/video/Child development stages - Baby milestones of Gross motor development.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
+            <!--The Lastest-->
+            <h5 style="margin-top: 1rem">The Lastest</h5>
+            <div class="media border p-3">
+              <img
+                src="./news/images/news-avatar-1.png"
+                alt="John Doe"
+                class="mr-3 mt-3 rounded-circle"
+                style="width: 60px"
+              />
+              <div class="media-body">
+                <p><i>Posted on November 19, 2020</i></p>
+                <p>
+                  26 Products Are Finalists for Kind+Jugend Innovation Awards.
+                </p>
+              </div>
+            </div>
+            <div class="media border p-3">
+              <img
+                src="./news/images/news-avatar-2.jpg"
+                alt="Prince Lina"
+                class="mr-3 mt-3 rounded-circle"
+                style="width: 60px"
+              />
+              <div class="media-body">
+                <p><i>Posted on November 05, 2020</i></p>
+                <p>
+                  Children’s and Products Create Sophisticated, Playful
+                  Resources.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--RIGHT BLOCK-->
+          <div class="d-flex flex-column right-block">
+            <!--Card 1 & 2-->
+            <div class="d-flex flex-row">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./news/images/product-news.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Hot Products</h4>
+                  <a href="#" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./news/images/events-news.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Events</h4>
+                  <a href="#" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+            </div>
+            <!--Card 3 & 4-->
+            <div class="d-flex flex-row">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./news/images/family-news.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Family Time</h4>
+                  <a href="#" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./news/images/books-news.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Books</h4>
+                  <a href="#" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
 
     <!-- LIST NEWS -->
     <section id="list-news">
-      <div class="container">
-        
+      <div class="container"></div>
+    </section>
+
+    <!-- Login modal -->
+    <section id="login-modal">
+      <div class="container modal-content">
+        <span id="login-modal-close">&times;</span>
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="login-modal-username"
+              aria-describedby="usernameModal"
+              placeholder="Username"
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Please enter your username.</div>
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="login-modal-password"
+              placeholder="Password"
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <button
+            type="submit"
+            class="btn login-button mr-sm-4"
+            id="login-modal-submit"
+          >
+            Login
+          </button>
+        </form>
       </div>
     </section>
-    
+    <!-- End login section -->
 
     <!-- Footer -->
     <section id="footer">
@@ -172,38 +275,59 @@
         <div class="container">
           <div class="d-flex flex-row justify-content-center">
             <div class="col-sm-3 justify-content-begin align-items-start">
-              <div class="d-flex flex-column justify-content-center align-items-begin">
-                <img alt="footer-logo" src="./home/images/tiny-tots-logo.png" class="footer-logo">                                    
-              </div> 
+              <div
+                class="d-flex flex-column justify-content-center align-items-begin"
+              >
+                <img
+                  alt="footer-logo"
+                  src="./home/images/tiny-tots-logo.png"
+                  class="footer-logo"
+                />
+              </div>
             </div>
             <div class="col-sm-3 justify-content-begin align-items-center">
               <p class="footer-header">Address</p>
-              <p class="footer-info">1 Phan Dang Luu Street, Hai Chau District,
-                Danang City, Vietnam
+              <p class="footer-info">
+                1 Phan Dang Luu Street, Hai Chau District, Danang City, Vietnam
               </p>
             </div>
             <div class="col-sm-3 justify-content-begin align-items-center">
               <p class="footer-header">Contact</p>
               <p class="footer-info">Email: info@tinytots.com</p>
               <p class="footer-info">Hotline: +84 236 3681 666</p>
-              <p class="footer-info">Fax: +84 236 3681 777</p>              
+              <p class="footer-info">Fax: +84 236 3681 777</p>
             </div>
             <div class="col-sm-3 justify-content-begin align-items-center">
               <p class="footer-header">Links</p>
-              <div class="d-flex flex-row justify-content-center align-items-start">
+              <div
+                class="d-flex flex-row justify-content-center align-items-start"
+              >
                 <div class="col-sm-6 justify-content-begin align-items-center">
-                  <p class="footer-info"><a href="index.html" class="footer-link">Home</a></p>
-                  <p class="footer-info"><a href="products.html" class="footer-link">Products</a></p>
-                  <p class="footer-info"><a href="news.html" class="footer-link">News</a></p>
-                  </div>
-                  <div class="col-sm-6 justify-content-begin align-items-center">
-                    <p class="footer-info"><a href="franchise.html" class="footer-link">Franchise</a></p>
-                    <p class="footer-info"><a href="contactus.html" class="footer-link">Contact Us</a></p>
+                  <p class="footer-info">
+                    <a href="index.html" class="footer-link">Home</a>
+                  </p>
+                  <p class="footer-info">
+                    <a href="products.html" class="footer-link">Products</a>
+                  </p>
+                  <p class="footer-info">
+                    <a href="news.html" class="footer-link">News</a>
+                  </p>
                 </div>
-              </div>             
+                <div class="col-sm-6 justify-content-begin align-items-center">
+                  <p class="footer-info">
+                    <a href="franchise.html" class="footer-link">Franchise</a>
+                  </p>
+                  <p class="footer-info">
+                    <a href="contactus.html" class="footer-link">Contact Us</a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex flex-row justify-content-between align-items-center" style="margin-top: 1rem;">
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+            style="margin-top: 1rem"
+          >
             <div class="d-flex">
               <p class="footer-info">@ Copyright 2020 by Team</p>
             </div>
@@ -215,7 +339,7 @@
                 ><i class="fab fa-youtube-square"></i>
               </p>
             </div>
-          </div>          
+          </div>
         </div>
       </div>
     </section>
@@ -237,5 +361,7 @@
     <script src="./js/franchise.js"></script>
     <!-- Home JS for AOS Animation -->
     <script src="./contactus/js/home.js"></script>
+    <!-- Check Login -->
+    <script src="./home/js/login.js"></script>
   </body>
 </html>

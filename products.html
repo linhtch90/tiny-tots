@@ -41,50 +41,93 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 
-<body onload="loadingProducts()">
+<body onload="loadingProducts(); checkLogin();">
 
 
 
-  <!-- Navitation bar from homepage -->
-  <section id="navigation">
-    <nav class="navbar">
-      <div class="container">
-        <div class="d-flex flex-row align-items-center justify-content-center w-100">
-          <img class="logo" alt="logo" src="./products/images/tiny-tots-logo.jpg" />
-          <div class="d-flex flex-column align-items-center justify-content-center w-100">
-            <div class="d-flex flex-row align-items-center justify-content-end w-100">
-              <input class="form-control mr-sm-4 w-25" type="search" placeholder="Search" aria-label="Search" />
-              <button type="button" class="btn login-button mr-sm-4">
-                Join Us
-              </button>
-              <a href="./cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a>
-            </div>
-            <div class="d-flex flex-row align-items-center justify-content-end w-100">
-              <div class="navbar">
-                <ul class="navbar-nav d-flex flex-row">
-                  <li class="nav-item ml-sm-5">
-                    <a class="nav-link" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item ml-sm-5">
-                    <a class="nav-link" href="./products.html">Products</a>
-                  </li>
-                  <li class="nav-item ml-sm-5">
-                    <a class="nav-link" href="#">News</a>
-                  </li>
-                  <li class="nav-item ml-sm-5">
-                    <a class="nav-link" href="./franchise.html">Franchise</a>
-                  </li>
-                  <li class="nav-item ml-sm-5">
-                    <a class="nav-link" href="./contactus.html">Contact Us</a>
-                  </li>
-                </ul>
+  <!-- Navitation bar -->
+    <section id="navigation">
+      <nav class="navbar">
+        <div class="container">
+          <div
+            class="d-flex flex-row align-items-center justify-content-center w-100"
+          >
+            <img
+              class="logo"
+              alt="logo"
+              src="./home/images/tiny-tots-logo.jpg"
+            />
+            <div
+              class="d-flex flex-column align-items-center justify-content-center w-100"
+            >
+              <div
+                class="d-flex flex-row align-items-center justify-content-end w-100"
+              >
+                <input
+                  class="form-control mr-sm-4 w-25"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <!-- Login Button -->
+                <button
+                  type="button"
+                  class="btn login-button mr-sm-4"
+                  onclick="login()"
+                  id="user-login-button"
+                >
+                  Join Us
+                </button>
+                <!-- Logout Button -->
+                <div class="dropdown">
+                  <button
+                    class="btn login-button dropdown-toggle"
+                    type="button"
+                    id="user-logout-button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  ></button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#" onclick="logout()"
+                      ><i class="fas fa-sign-out-alt"></i> Log out</a
+                    >
+                  </div>
+                  <!-- END Logout button -->
+                </div>
+                <a href="./cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a>
+              </div>
+              <div
+                class="d-flex flex-row align-items-center justify-content-end w-100"
+              >
+                <div class="navbar">
+                  <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item ml-sm-5">
+                      <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ml-sm-5">
+                      <a class="nav-link" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item ml-sm-5">
+                      <a class="nav-link" href="./news.html">News</a>
+                    </li>
+                    <li class="nav-item ml-sm-5">
+                      <a class="nav-link" href="./franchise.html">Franchise</a>
+                    </li>
+                    <li class="nav-item ml-sm-5">
+                      <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </section> <!-- end navigation section -->
+      </nav>
+    </section> <!-- end navigation section -->
 
 
 
@@ -248,6 +291,50 @@
     </div>
   </section> <!-- End comparing section -->
 
+  <!-- Login modal -->
+    <section id="login-modal">
+      <div class="container modal-content">
+        <span id="login-modal-close">&times;</span>
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="login-modal-username"
+              aria-describedby="usernameModal"
+              placeholder="Username"
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Please enter your username.</div>
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="login-modal-password"
+              placeholder="Password"
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <button
+            type="submit"
+            class="btn login-button mr-sm-4"
+            id="login-modal-submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- End login section -->
 
 
 
@@ -319,6 +406,7 @@
   <script src="./products/home.js"></script>
   <script src="./cart/cart.js"></script>
   <script src="./productdetail/productdetail.js"></script>
+  <script src="./home/js/login.js"></script>
 </body>
 
 </html>
