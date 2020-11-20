@@ -26,7 +26,7 @@
     <title>Tiny Tots - Baby and Kids Clothes - Baby Clothing Online</title>
   </head>
 
-  <body>
+  <body onload="checkLogin()">
     <!-- Navitation bar -->
     <section id="navigation">
       <nav class="navbar">
@@ -51,9 +51,35 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button type="button" class="btn login-button mr-sm-4">
+                <!-- Login Button -->
+                <button
+                  type="button"
+                  class="btn login-button mr-sm-4"
+                  onclick="login()"
+                  id="user-login-button"
+                >
                   Join Us
                 </button>
+                <!-- Logout Button -->
+                <div class="dropdown">
+                  <button
+                    class="btn login-button dropdown-toggle"
+                    type="button"
+                    id="user-logout-button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  ></button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#" onclick="logout()"
+                      ><i class="fas fa-sign-out-alt"></i> Log out</a
+                    >
+                  </div>
+                  <!-- END Logout button -->
+                </div>
                 <i class="fas fa-shopping-cart cart-icon"></i>
               </div>
               <div
@@ -111,9 +137,7 @@
                 alt="carousel-1"
               />
               <div class="carousel-caption d-none d-md-block">
-                <p class="carousel-tip">
-                  Browse and shop the newest designs
-                </p>
+                <p class="carousel-tip">Browse and shop the newest designs</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -423,63 +447,129 @@
           of course our products with you.
         </p>
         <p>Much Love, TinyTots-Kids Fairies x</p>
-        <img src="home/images/text-logo-pink.png" style="width: 20%;">
+        <img src="home/images/text-logo-pink.png" style="width: 20%" />
       </div>
     </section>
 
-        <!-- Footer -->
-        <section id="footer">
-          <div class="container-fluid footer-background">
-            <div class="container">
-              <div class="d-flex flex-row justify-content-center">
-                <div class="col-sm-3 justify-content-begin align-items-start">
-                  <div class="d-flex flex-column justify-content-center align-items-begin">
-                    <img alt="footer-logo" src="./home/images/tiny-tots-logo.png" class="footer-logo">                                    
-                  </div> 
-                </div>
-                <div class="col-sm-3 justify-content-begin align-items-center">
-                  <p class="footer-header">Address</p>
-                  <p class="footer-info">1 Phan Dang Luu Street, Hai Chau District,
-                    Danang City, Vietnam
+    <!-- Login modal -->
+    <section id="login-modal">
+      <div class="container modal-content">
+        <span id="login-modal-close">&times;</span>
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="login-modal-username"
+              aria-describedby="usernameModal"
+              placeholder="Username"
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Please enter your username.</div>
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="login-modal-password"
+              placeholder="Password"
+              value=""
+              required
+            />
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <button
+            type="submit"
+            class="btn login-button mr-sm-4"
+            id="login-modal-submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- End login section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container-fluid footer-background">
+        <div class="container">
+          <div class="d-flex flex-row justify-content-center">
+            <div class="col-sm-3 justify-content-begin align-items-start">
+              <div
+                class="d-flex flex-column justify-content-center align-items-begin"
+              >
+                <img
+                  alt="footer-logo"
+                  src="./home/images/tiny-tots-logo.png"
+                  class="footer-logo"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3 justify-content-begin align-items-center">
+              <p class="footer-header">Address</p>
+              <p class="footer-info">
+                1 Phan Dang Luu Street, Hai Chau District, Danang City, Vietnam
+              </p>
+            </div>
+            <div class="col-sm-3 justify-content-begin align-items-center">
+              <p class="footer-header">Contact</p>
+              <p class="footer-info">Email: info@tinytots.com</p>
+              <p class="footer-info">Hotline: +84 236 3681 666</p>
+              <p class="footer-info">Fax: +84 236 3681 777</p>
+            </div>
+            <div class="col-sm-3 justify-content-begin align-items-center">
+              <p class="footer-header">Links</p>
+              <div
+                class="d-flex flex-row justify-content-center align-items-start"
+              >
+                <div class="col-sm-6 justify-content-begin align-items-center">
+                  <p class="footer-info">
+                    <a href="index.html" class="footer-link">Home</a>
+                  </p>
+                  <p class="footer-info">
+                    <a href="products.html" class="footer-link">Products</a>
+                  </p>
+                  <p class="footer-info">
+                    <a href="news.html" class="footer-link">News</a>
                   </p>
                 </div>
-                <div class="col-sm-3 justify-content-begin align-items-center">
-                  <p class="footer-header">Contact</p>
-                  <p class="footer-info">Email: info@tinytots.com</p>
-                  <p class="footer-info">Hotline: +84 236 3681 666</p>
-                  <p class="footer-info">Fax: +84 236 3681 777</p>              
-                </div>
-                <div class="col-sm-3 justify-content-begin align-items-center">
-                  <p class="footer-header">Links</p>
-                  <div class="d-flex flex-row justify-content-center align-items-start">
-                    <div class="col-sm-6 justify-content-begin align-items-center">
-                    <p class="footer-info"><a href="index.html" class="footer-link">Home</a></p>
-                    <p class="footer-info"><a href="products.html" class="footer-link">Products</a></p>
-                    <p class="footer-info"><a href="news.html" class="footer-link">News</a></p>
-                    </div>
-                    <div class="col-sm-6 justify-content-begin align-items-center">
-                      <p class="footer-info"><a href="franchise.html" class="footer-link">Franchise</a></p>
-                      <p class="footer-info"><a href="contactus.html" class="footer-link">Contact Us</a></p>
-                    </div>
-                  </div>             
+                <div class="col-sm-6 justify-content-begin align-items-center">
+                  <p class="footer-info">
+                    <a href="franchise.html" class="footer-link">Franchise</a>
+                  </p>
+                  <p class="footer-info">
+                    <a href="contactus.html" class="footer-link">Contact Us</a>
+                  </p>
                 </div>
               </div>
-              <div class="d-flex flex-row justify-content-between align-items-center" style="margin-top: 1rem;">
-                <div class="d-flex">
-                  <p class="footer-info">@ Copyright 2020 by Team</p>
-                </div>
-                <div class="d-flex">
-                  <p class="footer-icon">
-                    <i class="fab fa-facebook-square"></i
-                    ><i class="fab fa-twitter-square"></i
-                    ><i class="fab fa-instagram-square"></i
-                    ><i class="fab fa-youtube-square"></i>
-                  </p>
-                </div>
-              </div>          
             </div>
           </div>
-        </section>
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+            style="margin-top: 1rem"
+          >
+            <div class="d-flex">
+              <p class="footer-info">@ Copyright 2020 by Team</p>
+            </div>
+            <div class="d-flex">
+              <p class="footer-icon">
+                <i class="fab fa-facebook-square"></i
+                ><i class="fab fa-twitter-square"></i
+                ><i class="fab fa-instagram-square"></i
+                ><i class="fab fa-youtube-square"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script
@@ -496,5 +586,7 @@
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <!-- User-defined JS -->
     <script src="./home/js/home.js"></script>
+    <!-- Login -->
+    <script src="./home/js/login.js"></script>
   </body>
 </html>

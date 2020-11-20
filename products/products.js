@@ -1,223 +1,223 @@
-var listProducts = [];
-function Product(id, category, image, name, price, brand) {
-  this.ID = id;
-  this.Category = category;
-  this.Image = image;
-  this.Name = name;
-  this.Price = price;
-  this.Brand = brand;
-}
+// var listProducts = [];
+// function Product(id, category, image, name, price, brand) {
+//   this.ID = id;
+//   this.Category = category;
+//   this.Image = image;
+//   this.Name = name;
+//   this.Price = price;
+//   this.Brand = brand;
+// }
 
-listProducts.push(
-  new Product(
-    "BA1",
-    "Baby Care",
-    "baby-care/bottlejs1.jpg",
-    "Anti Colic Bottle 260ml",
-    "15.00",
-    "Johnson"
-  )
-);
-listProducts.push(
-  new Product(
-    "BA2",
-    "Baby Care",
-    "baby-care/bottle-pigeon1.jpg",
-    "Nursing Bottle",
-    "14.45",
-    "Pigeon"
-  )
-);
-listProducts.push(
-  new Product(
-    "BA3",
-    "Baby Care",
-    "baby-care/stroller1.jpg",
-    "Baby Stroller",
-    "578.50",
-    "Kids"
-  )
-);
-listProducts.push(
-  new Product(
-    "BA4",
-    "Baby Care",
-    "baby-care/bib1.jpg",
-    "Waterproof Silicone Bib",
-    "5.8",
-    "Pigeon"
-  )
-);
-listProducts.push(
-  new Product(
-    "BA5",
-    "Baby Care",
-    "baby-care/pacifier1.jpg",
-    "Ultra Air Pacifier",
-    "6.50",
-    "Johnson"
-  )
-);
+// listProducts.push(
+//   new Product(
+//     "BA1",
+//     "Baby Care",
+//     "baby-care/bottlejs1.jpg",
+//     "Anti Colic Bottle 260ml",
+//     "15.00",
+//     "Johnson"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "BA2",
+//     "Baby Care",
+//     "baby-care/bottle-pigeon1.jpg",
+//     "Nursing Bottle",
+//     "14.45",
+//     "Pigeon"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "BA3",
+//     "Baby Care",
+//     "baby-care/stroller1.jpg",
+//     "Baby Stroller",
+//     "578.50",
+//     "Kids"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "BA4",
+//     "Baby Care",
+//     "baby-care/bib1.jpg",
+//     "Waterproof Silicone Bib",
+//     "5.8",
+//     "Pigeon"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "BA5",
+//     "Baby Care",
+//     "baby-care/pacifier1.jpg",
+//     "Ultra Air Pacifier",
+//     "6.50",
+//     "Johnson"
+//   )
+// );
 
-listProducts.push(
-  new Product(
-    "FA1",
-    "Fashion",
-    "fashion/girldress1.jpg",
-    "Girl Party Dress",
-    "30.00",
-    "Baby Comfy"
-  )
-);
-listProducts.push(
-  new Product(
-    "FA2",
-    "Fashion",
-    "fashion/girltshirt1.jpg",
-    "Girl Cotton T-shirt",
-    "8.00",
-    "Kids"
-  )
-);
-listProducts.push(
-  new Product(
-    "FA3",
-    "Fashion",
-    "fashion/Fairydress1.jpg",
-    "Girl Fairy Dress",
-    "20.50",
-    "Kids"
-  )
-);
-listProducts.push(
-  new Product(
-    "FA4",
-    "Fashion",
-    "fashion/boytshirt1.jpg",
-    "Boy Cotton T-shirt",
-    "8.0",
-    "Kids"
-  )
-);
-listProducts.push(
-  new Product(
-    "FA5",
-    "Fashion",
-    "fashion/boydenim1.jpg",
-    "Boy Denim Jumpsuits",
-    "15.25",
-    "Baby Comfy"
-  )
-);
+// listProducts.push(
+//   new Product(
+//     "FA1",
+//     "Fashion",
+//     "fashion/girldress1.jpg",
+//     "Girl Party Dress",
+//     "30.00",
+//     "Baby Comfy"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "FA2",
+//     "Fashion",
+//     "fashion/girltshirt1.jpg",
+//     "Girl Cotton T-shirt",
+//     "8.00",
+//     "Kids"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "FA3",
+//     "Fashion",
+//     "fashion/Fairydress1.jpg",
+//     "Girl Fairy Dress",
+//     "20.50",
+//     "Kids"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "FA4",
+//     "Fashion",
+//     "fashion/boytshirt1.jpg",
+//     "Boy Cotton T-shirt",
+//     "8.0",
+//     "Kids"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "FA5",
+//     "Fashion",
+//     "fashion/boydenim1.jpg",
+//     "Boy Denim Jumpsuits",
+//     "15.25",
+//     "Baby Comfy"
+//   )
+// );
 
-listProducts.push(
-  new Product(
-    "TO1",
-    "Toys",
-    "toys/lego1.jpg",
-    "LEGO Construction Bulldozer",
-    "30.20",
-    "Lego"
-  )
-);
-listProducts.push(
-  new Product(
-    "TO2",
-    "Toys",
-    "toys/piano1.jpg",
-    "Mini Keys Musical KeyboardÂ ",
-    "45.00",
-    "Kids"
-  )
-);
-listProducts.push(
-  new Product(
-    "TO3",
-    "Toys",
-    "toys/truck1.jpg",
-    "Monster Truck Cars",
-    "15.50",
-    "Lego"
-  )
-);
-listProducts.push(
-  new Product(
-    "TO4",
-    "Toys",
-    "toys/barbie1.jpg",
-    "Barbie Doll",
-    "17.99",
-    "Baby Comfy"
-  )
-);
-listProducts.push(
-  new Product(
-    "TO5",
-    "Toys",
-    "toys/unicorn1.jpg",
-    "Unicorn Toy Soft Stuffed",
-    "10.99",
-    "Lego"
-  )
-);
+// listProducts.push(
+//   new Product(
+//     "TO1",
+//     "Toys",
+//     "toys/lego1.jpg",
+//     "LEGO Construction Bulldozer",
+//     "30.20",
+//     "Lego"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "TO2",
+//     "Toys",
+//     "toys/piano1.jpg",
+//     "Mini Keys Musical KeyboardÂ ",
+//     "45.00",
+//     "Kids"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "TO3",
+//     "Toys",
+//     "toys/truck1.jpg",
+//     "Monster Truck Cars",
+//     "15.50",
+//     "Lego"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "TO4",
+//     "Toys",
+//     "toys/barbie1.jpg",
+//     "Barbie Doll",
+//     "17.99",
+//     "Baby Comfy"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "TO5",
+//     "Toys",
+//     "toys/unicorn1.jpg",
+//     "Unicorn Toy Soft Stuffed",
+//     "10.99",
+//     "Lego"
+//   )
+// );
 
-listProducts.push(
-  new Product(
-    "WE1",
-    "Wellness and Hygiene",
-    "wellness-and-hygiene/diaper1.jpg",
-    "Diaper",
-    "18.00",
-    "Pampers"
-  )
-);
-listProducts.push(
-  new Product(
-    "WE2",
-    "Wellness and Hygiene",
-    "wellness-and-hygiene/wipe1.jpg",
-    "Baby Wet wipes",
-    "6.99",
-    "Johnson"
-  )
-);
-listProducts.push(
-  new Product(
-    "WE3",
-    "Wellness and Hygiene",
-    "wellness-and-hygiene/shampoo1.jpg",
-    "Baby Shampoo",
-    "9.00",
-    "Johnson"
-  )
-);
-listProducts.push(
-  new Product(
-    "WE4",
-    "Wellness and Hygiene",
-    "wellness-and-hygiene/powder1.jpg",
-    "Baby powder",
-    "6.50",
-    "Johnson"
-  )
-);
-listProducts.push(
-  new Product(
-    "WE5",
-    "Wellness and Hygiene",
-    "wellness-and-hygiene/mosquito1.jpg",
-    "Mosquito Repellent",
-    "4.50",
-    "Pampers"
-  )
-);
+// listProducts.push(
+//   new Product(
+//     "WE1",
+//     "Wellness and Hygiene",
+//     "wellness-and-hygiene/diaper1.jpg",
+//     "Diaper",
+//     "18.00",
+//     "Pampers"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "WE2",
+//     "Wellness and Hygiene",
+//     "wellness-and-hygiene/wipe1.jpg",
+//     "Baby Wet wipes",
+//     "6.99",
+//     "Johnson"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "WE3",
+//     "Wellness and Hygiene",
+//     "wellness-and-hygiene/shampoo1.jpg",
+//     "Baby Shampoo",
+//     "9.00",
+//     "Johnson"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "WE4",
+//     "Wellness and Hygiene",
+//     "wellness-and-hygiene/powder1.jpg",
+//     "Baby powder",
+//     "6.50",
+//     "Johnson"
+//   )
+// );
+// listProducts.push(
+//   new Product(
+//     "WE5",
+//     "Wellness and Hygiene",
+//     "wellness-and-hygiene/mosquito1.jpg",
+//     "Mosquito Repellent",
+//     "4.50",
+//     "Pampers"
+//   )
+// );
 
-// let listProducts = [];
-// fetch("./products/product-data.json")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     listProducts = data;
-//   });
+let listProducts = [];
+fetch("./products/product-data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    listProducts = data;
+  });
 
 // localStorage.listProducts = JSON.stringify(listProducts);
 //listProducts = JSON.parse(localStorage.listProducts);

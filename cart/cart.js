@@ -152,7 +152,7 @@ function displayCartItems() {
       " USD</strong></span> \n" +
       "                      </li> \n" +
       "                  </ul> \n" +
-      '                  <a href="#cart-form"><button type="button" class="btn btn-primary btn-block">PROCEED TO CHECKOUT</button></a> \n' +
+      '                  <a><button type="button" class="btn btn-primary btn-block" onclick="checkAccount()">PROCEED TO CHECKOUT</button></a> \n' +
       "              </div> \n" +
       "          </div> \n" +
       "      </div> \n" +
@@ -297,3 +297,16 @@ function checkForm() {
   });
 }
 false;
+
+// Check user account before filling checkout information
+
+const checkAccount = () => {
+  const cartForm = document.getElementById("cart-form");
+  let loginStatus = checkLogin();
+  if (loginStatus === false) {
+    login();
+    cartForm.scrollIntoView();
+  } else {
+    cartForm.scrollIntoView();
+  }
+};
