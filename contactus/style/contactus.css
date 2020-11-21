@@ -68,7 +68,8 @@ a.nav-link:hover {
 
 .support-item {
   background-color: white;
-  border: 0.1rem solid black;
+  border: 0.5rem solid #029899;
+  border-radius: 1rem;
   width: 45%;
   margin-bottom: -5rem;
   padding: 0.5rem;
@@ -99,8 +100,8 @@ a.email-sp:hover {
   margin-top: 12rem;
   margin-bottom: 3rem;
   align-items: center;
-  border-top: 0.2rem solid rgb(255, 102, 112);
-  border-bottom: 0.2rem solid rgb(255, 102, 112);
+  border-top: 0.5rem solid rgb(255, 102, 112);
+  border-bottom: 0.5rem solid rgb(255, 102, 112);
 }
 
 .headquaters-item {
@@ -139,7 +140,8 @@ a.email-sp:hover {
 /* Stories */
 
 #stores .container {
-  border: 0.1rem solid black;
+  border: 0.5rem solid #029899;
+  border-radius: 1rem;
   margin-top: 3.6rem;
   margin-bottom: 3rem;
 }
