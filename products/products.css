@@ -298,6 +298,28 @@ a.nav-link:hover {
   color: rgb(194, 107, 121);
 }
 
+.brand-contain {
+  border: gainsboro solid 1px;
+  padding: 16px;
+  margin: 20px 0px;
+  background: url(./images/brand-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: rgb(194, 107, 121);
+}
+
+.category-contain {
+  border: gainsboro solid 1px;
+  padding: 16px;
+  margin: 20px 0px;
+  background: url(./images/product-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: rgb(194, 107, 121);
+}
+
 .brand-container {
   width: 100%;
 }
