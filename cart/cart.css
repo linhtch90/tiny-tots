@@ -10,6 +10,34 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/* Cart */
+
+.card {
+  margin-bottom: 2rem !important;
+}
+
+.cart-quantity {
+  width: 3rem;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.product-info {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.product-quantity {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* Login modal */
 
 #login-modal {

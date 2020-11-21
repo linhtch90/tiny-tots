@@ -71,49 +71,49 @@ function displayCartItems() {
     for (var i = 0; i < cartItems.length; i++) {
       //document.getElementById("Cart").innerHTML +=
       firstBlock +=
-        '   <div class="col-xs-12 col-lg-8">\n' +
-        '     <div class="card mb-3">\n' +
+        '   <div class="col">\n' +
+        '     <div class="card">\n' +
         '       <div class="card-body">\n' +
-        '         <div class="row mb-4">\n' +
-        '           <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3">\n' +
-        '                <div class="thumbnail mb-3">\n' +
+        '         <div class="row">\n' +
+        '           <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">\n' +
+        '                <div class="thumbnail">\n' +
         '                    <img src="./products/images/' +
         cartItems[i].Image +
         '">\n' +
         "                </div>\n" +
         "            </div>\n" +
-        '            <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-9">\n' +
+        '            <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">\n' +
         '                <div class="d-flex justify-content-between">\n' +
-        "                    <div>\n" +
+        "                    <div class='col-xs-12 col-lg-7 product-info'>\n" +
         "                        <h5>" +
         cartItems[i].Name +
         "</h5>\n" +
-        '                        <p class="mb-3 text-muted small">Brand: ' +
+        '                        <p class=" text-muted small">Brand: ' +
         cartItems[i].Brand +
         "</p>\n" +
-        '                        <p class="mb-3 text-muted small">' +
+        '                        <p class=" text-muted small">' +
         cartItems[i].Price +
         " USD</p>\n" +
         "                    </div>\n" +
-        '                    <div class="">\n' +
-        '                        <button type="button" class="btn btn-default btn-sm" onclick="this.parentNode.querySelector(\'input[type=number]\').stepDown(); minus(\'' +
+        '                    <div class="col-xs-12 col-lg-5 product-quantity justify-content-end align-items-end">\n' +
+        '                        <button type="button" class="btn btn-default btn-sm ml-4" onclick="this.parentNode.querySelector(\'input[type=number]\').stepDown(); minus(\'' +
         cartItems[i].ID +
         "')\">\n" +
-        '                            <span class="glyphicon glyphicon-minus"></span>\n' +
+        '                            <span><i class="fas fa-minus-circle"></i></span>\n' +
         "                        </button>\n" +
-        '                        <input min="0" type="number" value="' +
+        '                        <input class="cart-quantity" min="0" type="number" value="' +
         cartItems[i].Quantity.toString() +
         '">\n' +
         '                        <button type="button" class="btn btn-default btn-sm" onclick="this.parentNode.querySelector(\'input[type=number]\').stepUp(); add(\'' +
         cartItems[i].ID +
         "')\">\n" +
-        '                            <span class="glyphicon glyphicon-plus"></span>\n' +
+        '                            <span><i class="fas fa-plus-circle"></i></span>\n' +
         "                        </button>\n" +
         "                    </div>\n" +
         "                </div>\n" +
         '                <div class="d-flex justify-content-between align-items-center">\n' +
         "                    <div>\n" +
-        '                        <a href="#!" type="button" class=" small mr-3" onclick="removeItem(\'' +
+        '                        <a href="#!" type="button" class=" small" onclick="removeItem(\'' +
         cartItems[i].ID +
         '\')"><i class="fas fa-trash-alt mr-1"></i> Remove this Item </a>\n' +
         "                    </div>\n" +
@@ -123,7 +123,7 @@ function displayCartItems() {
         "                </div> \n" +
         "            </div> \n" +
         "        </div> \n" +
-        '        <hr class="mb-4"> \n' +
+        "        <hr> \n" +
         "      </div>\n" +
         "    </div>\n" +
         "   </div>";
@@ -131,8 +131,11 @@ function displayCartItems() {
     }
     document.getElementById("Cart").innerHTML =
       '<div class="container"><h3 class="mb-4">Your Cart</h3></div>\n' +
-      ' <div class="container ">\n' +
+      ' <div class="container">\n' +
+      ' <div class="d-flex flex-row">\n' +
+      ' <div class="col-xs-12 col-lg-8">\n' +
       firstBlock +
+      "</div>" +
       '  <div class="col-xs-12 col-lg-4"> \n' +
       '          <div class="card mb-3"> \n' +
       '              <div class="card-body"> \n' +
@@ -157,6 +160,13 @@ function displayCartItems() {
       "          </div> \n" +
       "      </div> \n" +
       "</div>" +
+      "</div>" +
+      "<br> \n" +
+      "<br> \n" +
+      "<br> \n" +
+      "<br> \n" +
+      "<br> \n" +
+      "<br> \n" +
       "<br> \n" +
       "<br> \n" +
       "<br> \n" +
