@@ -349,7 +349,7 @@ function loadingProducts() {
       "'" +
       listProducts[i].ID +
       "'" +
-      ')"> <i class="fas fa-shopping-cart"></i> Add to Cart</button>\n' +
+      '); checkCart();"> <i class="fas fa-shopping-cart"></i> Add to Cart</button>\n' +
       '           <button class="btn btn-light detail-button" onclick="productDetail(' +
       "'" +
       listProducts[i].ID +

@@ -309,6 +309,10 @@ a.nav-link:hover {
   cursor: pointer;
 }
 
+#login-modal-submit {
+  padding: 0.5rem 4rem;
+}
+
 #user-login-button {
   display: block;
 }

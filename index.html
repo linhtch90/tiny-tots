@@ -44,6 +44,7 @@
             >
               <div
                 class="d-flex flex-row align-items-center justify-content-end w-100"
+                id="cart-group"
               >
                 <input
                   class="form-control mr-sm-4 w-25"
@@ -457,43 +458,81 @@
     <section id="login-modal">
       <div class="container modal-content">
         <span id="login-modal-close">&times;</span>
-        <form class="needs-validation" novalidate>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Username</label>
-            <input
-              type="text"
-              class="form-control"
-              id="login-modal-username"
-              aria-describedby="usernameModal"
-              placeholder="Username"
-              value=""
-              required
-            />
-            <div class="invalid-feedback">Please enter your username.</div>
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
+
+        <div class="modal-body">
+          <div role="tabpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a
+                  href="#logInTab"
+                  aria-controls="logInTab"
+                  role="tab"
+                  data-toggle="tab"
+                  >Log In</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#registerTab"
+                  aria-controls="registerTab"
+                  role="tab"
+                  data-toggle="tab"
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="logInTab">
+                <form class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="login-modal-username"
+                      aria-describedby="usernameModal"
+                      placeholder="Username"
+                      value=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your username.
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="login-modal-password"
+                      placeholder="Password"
+                      value=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your password.
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn login-button mr-sm-4"
+                    id="login-modal-submit"
+                  >
+                    Login
+                  </button>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="registerTab">
+                browseTab
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="login-modal-password"
-              placeholder="Password"
-              value=""
-              required
-            />
-            <div class="invalid-feedback">Please enter your password.</div>
-          </div>
-          <button
-            type="submit"
-            class="btn login-button mr-sm-4"
-            id="login-modal-submit"
-          >
-            Login
-          </button>
-        </form>
+        </div>
       </div>
     </section>
     <!-- End login section -->

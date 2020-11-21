@@ -66,6 +66,8 @@ const checkCart = () => {
       inCart.length +
       "</span>";
   }
+  console.log("Cart is checked!");
+  console.log(inCart.length);
 };
 
 const logout = () => {
@@ -74,7 +76,9 @@ const logout = () => {
   // localStorage.setItem("loginStatus", "false");
   localStorage.clear();
   loginButton.style.display = "block";
-  logoutButton.innerHTML = "<i class='far fa-user'></i> " + username;
+  // logoutButton.innerHTML = "<i class='far fa-user'></i> " + username;
+  document.getElementById("cart").innerHTML =
+    '<i class="fas fa-shopping-cart cart-icon"></i>';
   logoutButton.style.display = "none";
   loginModal.style.display = "none";
 };
