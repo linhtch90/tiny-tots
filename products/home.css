@@ -261,3 +261,13 @@ a.nav-link:hover {
   cursor: pointer;
   color: #029899;
 }
+
+/* Login-register */
+
+.login-tab {
+  text-decoration: none !important;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 1rem;
+  color: #ff6a5f;
+}

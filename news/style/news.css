@@ -23,6 +23,10 @@ nav.navbar {
   color: rgb(255, 102, 112);
 }
 
+#cart:hover {
+  text-decoration: none;
+}
+
 .cart-category {
   text-decoration: none;
   text-align: center;
@@ -148,8 +152,8 @@ a.nav-link:hover {
 #login-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 160px; /* Location of the box */
+  z-index: 20; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -157,6 +161,26 @@ a.nav-link:hover {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.nav-tabs {
+  margin-bottom: 1rem;
+}
+
+.login-tab {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ff6a5f;
+  margin: 1rem;
+}
+
+.login-tab:hover {
+  text-decoration: none;
+  color: #029899;
+  margin: 1rem;
+  border-bottom: solid;
+  border-width: 0.2rem;
+  border-color: #029899;
 }
 
 .modal-content {
@@ -179,6 +203,14 @@ a.nav-link:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#login-modal-submit {
+  padding: 0.5rem 4rem;
+}
+
+#register-modal-submit {
+  padding: 0.5rem 4rem;
 }
 
 #user-login-button {

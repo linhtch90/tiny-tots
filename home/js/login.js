@@ -6,10 +6,15 @@ const loginModal = document.getElementById("login-modal");
 const loginClose = document.getElementById("login-modal-close");
 const loginSubmit = document.getElementById("login-modal-submit");
 const loginButton = document.getElementById("user-login-button");
+const registerSubmit = document.getElementById("register-modal-submit");
 const logoutButton = document.getElementById("user-logout-button");
 
 // Prevent default activities of submit button
 loginSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+});
+
+registerSubmit.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
@@ -18,9 +23,27 @@ const login = () => {
   loginClose.onclick = () => {
     loginModal.style.display = "none";
   };
+
   loginSubmit.onclick = () => {
     username = document.getElementById("login-modal-username").value;
     password = document.getElementById("login-modal-password").value;
+    isLogin = true;
+    if (username !== "" && password !== "") {
+      console.log(username);
+      console.log(password);
+      localStorage.setItem("userName", username);
+      localStorage.setItem("password", password);
+      localStorage.setItem("loginStatus", isLogin);
+      loginButton.style.display = "none";
+      logoutButton.innerHTML = "<i class='far fa-user'></i> " + username;
+      logoutButton.style.display = "block";
+      loginModal.style.display = "none";
+    }
+  };
+
+  registerSubmit.onclick = () => {
+    username = document.getElementById("register-modal-username").value;
+    password = document.getElementById("register-modal-password").value;
     isLogin = true;
     if (username !== "" && password !== "") {
       console.log(username);
