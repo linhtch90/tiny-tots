@@ -16,6 +16,7 @@ $(document).ready(function () {
 });
 
 function addToCart(ID) {
+  console.log("addToCart is running: " + ID);
   toastr[
     "success"
   ](
@@ -28,6 +29,8 @@ function addToCart(ID) {
   let addItem = listProductsforCart.filter(
     (item) => item.ID === addCartItems[addCartItems.length - 1]
   ); // read list product from json data
+
+  console.log("addItem: " + addItem);
 
   var newItem = {};
   for (var i = 0; i < addItem.length; i++) {
@@ -102,7 +105,7 @@ function displayCartItems() {
         '                            <span><i class="fas fa-minus-circle"></i></span>\n' +
         "                        </button>\n" +
         '                        <input class="cart-quantity" min="0" type="number" value="' +
-        cartItems[i].Quantity.toString() +
+        cartItems[i].Quantity +
         '">\n' +
         '                        <button type="button" class="btn btn-default btn-sm" onclick="this.parentNode.querySelector(\'input[type=number]\').stepUp(); add(\'' +
         cartItems[i].ID +
@@ -320,3 +323,66 @@ const checkAccount = () => {
     cartForm.scrollIntoView();
   }
 };
+
+const detailToCart = () => {
+  console.log("detailToCart is running");
+  let checkedProduct = localStorage.getItem("checkDetail");
+  console.log("detailToCart is running: " + checkedProduct);
+  let detailQuantity = document.getElementById("id-detail-quantity").value;
+  localStorage.setItem("detailQuantity", detailQuantity);
+  detailAddToCart(checkedProduct);
+};
+
+function detailAddToCart(ID) {
+  console.log("addToCart is running: " + ID);
+  toastr[
+    "success"
+  ](
+    "</i><a href='' style='font-size: 1.2rem'>You have selected one item</a>",
+    "",
+    { timeOut: 1000 }
+  );
+
+  addCartItems.push(ID);
+  let addItem = listProductsforCart.filter(
+    (item) => item.ID === addCartItems[addCartItems.length - 1]
+  ); // read list product from json data
+
+  console.log("addItem: " + addItem);
+
+  var newItem = {};
+  for (var i = 0; i < addItem.length; i++) {
+    newItem.ID = addItem[i].ID;
+    newItem.Name = addItem[i].Name;
+    newItem.Image = addItem[i].Image;
+    newItem.Brand = addItem[i].Brand;
+    newItem.Price = addItem[i].Price;
+    newItem.Quantity = 1;
+    if (localStorage.getItem("detailQuantity") !== "") {
+      newItem.Quantity = parseInt(localStorage.getItem("detailQuantity"), 10);
+    }
+  }
+  //console.log(newItem);
+
+  var exists = false;
+  if (cartItems.length > 0) {
+    $.each(cartItems, function (index, value) {
+      // if exist, increase quantity
+      if (value.ID == newItem.ID) {
+        value.Quantity++;
+        exists = true;
+        return false;
+      }
+    });
+  }
+
+  if (!exists) {
+    cartItems.push(newItem);
+  }
+
+  //console.log(cartItems);
+
+  localStorage["cart-items"] = JSON.stringify(cartItems);
+
+  displayCartItems();
+}

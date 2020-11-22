@@ -1,0 +1,21 @@
+.detail-info {
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 10rem;
+  margin-top: 6rem;
+}
+
+#product-detail-image img {
+  width: 100%;
+  height: 100%;
+}
+.detail-quantity {
+  width: 3rem;
+}
+
+.add-to-cart-button {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  padding: 0.2rem !important;
+  width: 16rem !important;
+  margin: 0.5rem 0 !important;

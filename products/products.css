@@ -489,16 +489,16 @@ a {
   text-decoration: none;
   font-size: 1.2rem;
   color: #ff6a5f;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 .login-tab:hover {
   text-decoration: none;
   color: #029899;
-  margin: 1rem;
-  border-bottom: solid;
+  /* margin: 1rem; */
+  /* border-bottom: solid;
   border-width: 0.2rem;
-  border-color: #029899;
+  border-color: #029899; */
 }
 
 .modal-content {

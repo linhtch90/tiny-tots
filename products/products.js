@@ -257,11 +257,11 @@ function product(n) {
         listProducts[i].ID +
         "'" +
         ')"> <i class="fas fa-shopping-cart"></i> Add to Cart</button>\n' +
-        '           <button class="btn btn-light detail-button" onclick="productDetail(' +
+        '           <a href="./productdetail.html"><button class="btn btn-light detail-button" onclick="addToDetail(' +
         "'" +
         listProducts[i].ID +
         "'" +
-        ')">Detail</button>\n' +
+        ')">Detail</button></a>\n' +
         '           <button class="btn btn-light compare-button" onclick="addToCompare(' +
         "'" +
         listProducts[i].ID +
@@ -302,11 +302,11 @@ function product(n) {
         listProducts[i].ID +
         "'" +
         ')"> <i class="fas fa-shopping-cart"></i> Add to Cart</button>\n' +
-        '           <button class="btn btn-light detail-button" onclick="productDetail(' +
+        '           <a href="./productdetail.html"><button class="btn btn-light detail-button" onclick="addToDetail(' +
         "'" +
         listProducts[i].ID +
         "'" +
-        ')">Detail</button>\n' +
+        ')">Detail</button></a>\n' +
         '           <button class="btn btn-light compare-button" onclick="addToCompare(' +
         "'" +
         listProducts[i].ID +
@@ -350,11 +350,11 @@ function loadingProducts() {
       listProducts[i].ID +
       "'" +
       '); checkCart();"> <i class="fas fa-shopping-cart"></i> Add to Cart</button>\n' +
-      '           <button class="btn btn-light detail-button" onclick="productDetail(' +
+      '           <a href="./productdetail.html"><button class="btn btn-light detail-button" onclick="addToDetail(' +
       "'" +
       listProducts[i].ID +
       "'" +
-      ')">Detail</button>\n' +
+      ')">Detail</button></a>\n' +
       '           <button class="btn btn-light compare-button" onclick="addToCompare(' +
       "'" +
       listProducts[i].ID +
@@ -472,3 +472,9 @@ function compareProducts() {
 //   // run at load
 //   $.fn.setHeight(0);
 // })(jQuery);
+
+// Add to Detail: Saving product ID to localStorage
+
+const addToDetail = (ID) => {
+  localStorage.setItem("checkDetail", ID);
+};
