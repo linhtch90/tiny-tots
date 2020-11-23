@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+package "Client" {
+	[Client computer]	
+}
+package "Tiny Tots Website" {
+	[Front-end system\n//HTML5//\n//CSS3//\n//JavaScript//]	
+}
+database "Database" {	
+	[Product data as\na local JSON file\n\nOther temporary data\nstored in localStorage]		
+}
+[Client computer] <--> [Front-end system\n//HTML5//\n//CSS3//\n//JavaScript//]
+[Front-end system\n//HTML5//\n//CSS3//\n//JavaScript//] <--> [Product data as\na local JSON file\n\nOther temporary data\nstored in localStorage]
+
+@enduml

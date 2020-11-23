@@ -1,10 +1,13 @@
 @startuml
 scale 1.5
 start
+:Proceed to Checkout;
 if (Buyer has an account?) then (Yes)
-	:Log In;
+	:Log in;
 else (No)
 	:Register;
-endif	
+	:Automatic log user in;
+endif
+:Fill delivery information;
 stop
 @enduml

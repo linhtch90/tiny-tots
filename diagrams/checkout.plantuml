@@ -15,6 +15,7 @@ end split
 }
 partition Checkout {
 :Checkout Page;
+:Check log in status\nbefore checking out;		
 :User provide shipping information;
 :User choose payment method;
 :Checkout;		
