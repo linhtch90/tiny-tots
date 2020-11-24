@@ -83,9 +83,9 @@ const checkLogin = () => {
 
 const checkCart = () => {
   let inCart = JSON.parse(localStorage.getItem("cart-items"));
-  if (inCart.length > 0) {
-    document.getElementById("cart").innerHTML +=
-      '<span class="cart-category">&nbsp;&nbsp;Cart: ' +
+  if (inCart.length >= 0) {
+    document.getElementById("cart").innerHTML =
+      '<i class="fas fa-shopping-cart cart-icon"></i>&nbsp;<span class="cart-category">&nbsp;&nbsp;Cart: ' +
       inCart.length +
       "</span>";
   }

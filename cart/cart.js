@@ -62,7 +62,7 @@ function addToCart(ID) {
   //console.log(cartItems);
 
   localStorage["cart-items"] = JSON.stringify(cartItems);
-
+  checkCart();
   displayCartItems();
 }
 
@@ -245,6 +245,7 @@ function displayCartItems() {
       '        <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="checkForm()">Place your order</button> \n' +
       "      </form>  <!-- end card section --></br> \n";
   }
+  checkCart();
 }
 
 function minus(id) {
@@ -286,6 +287,7 @@ function removeItem(id) {
   localStorage["cart-items"] = JSON.stringify(cartItems);
   cartItems = JSON.parse(localStorage["cart-items"].toString());
   displayCartItems();
+  checkCart();
 }
 
 // function to validate form
@@ -323,6 +325,8 @@ const checkAccount = () => {
     cartForm.scrollIntoView();
   }
 };
+
+// Add to Cart from Detail page
 
 const detailToCart = () => {
   console.log("detailToCart is running");

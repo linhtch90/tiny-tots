@@ -3,160 +3,220 @@
     "ID": "BA1",
     "Category": "Baby Care",
     "Image": "baby-care/bottlejs1.jpg",
+    "Image2": "baby-care/bottle2.jpg",
+    "Image3": "baby-care/bottle3.jpg",
     "Name": "Anti Colic Bottle 260ml",
-    "Price": 15,
-    "Brand": "Johnson"
+    "Price": 15.99,
+    "Brand": "Johnson",
+    "Detail": "A clinically proven solution to reduce colic, fussing and discomfort linked to feeding issues. Our Anti-colic bottle is designed to keep air away from the baby’s tummy to help reduce colic, discomfort and fussing."
   },
   {
     "ID": "BA2",
     "Category": "Baby Care",
     "Image": "baby-care/bottle-pigeon1.jpg",
+    "Image2": "baby-care/bottle-pigeon2.jpg",
+    "Image3": "baby-care/bottle-pigeon3.jpg",
     "Name": "Nursing Bottle",
-    "Price": 14,
-    "Brand": "Pigeon"
+    "Price": 14.45,
+    "Brand": "Pigeon",
+    "Detail": "The ultra soft silicone rubber with double thickness ensures ideal softness and elasticity so baby can latch on easily and comfortably. The shape fits perfectly with your baby's tongue, allowing smooth tongue movement while minimising air intake. The nipple's roomy base helps your baby open his mouth widely, thereby encouraging steady peristaltic motion. The streamlined shape makes it easy for mothers to hold and keep clean. Made of premium quality borosilicate glass material with excellent transparency and high heat resistancebpa free."
   },
   {
     "ID": "BA3",
     "Category": "Baby Care",
     "Image": "baby-care/stroller1.jpg",
+    "Image2": "baby-care/stroller2.jpg",
+    "Image3": "baby-care/stroller3.jpg",
     "Name": "Baby Stroller",
-    "Price": 57,
-    "Brand": "Kids"
+    "Price": 57.25,
+    "Brand": "Kids",
+    "Detail": "Meticulously designed, our range of strollers, prams, car seats, buggies and other outdoor gear, lets your baby discover the world from the lap of luxury. They are comfortable nests that accompany your baby on tours through the city streets and country roads. Ergonomically designed to ensure your baby is always comfortably supported. So that your little one gets the comfort that’s next only to the warmth of your lap. Conceived with care and made using the latest marvels of science, all LuvLap products undergo multiple quality checks before they are dispatched to the stores."
   },
   {
     "ID": "BA4",
     "Category": "Baby Care",
     "Image": "baby-care/bib1.jpg",
+    "Image2": "baby-care/bib2.jpg",
+    "Image3": "baby-care/bib3.jpg",
     "Name": "Waterproof Silicone Bib",
-    "Price": 5,
-    "Brand": "Pigeon"
+    "Price": 5.99,
+    "Brand": "Pigeon",
+    "Detail": "Our Silicone bib is made up of food-grade silicone. They don’t absorb liquids and drool thus eliminating any infection sites. The premium quality silicone that we use has been approved by FDA and ISO standards; we trust it with our own kids. Isn’t it costly? Trust me we saw that coming! We will give you 5 reasons why it is not. 1 Silicone bib = 10 cotton bibs – Silicone lasts long and it doesn’t wear and tear. Adjustable hooks allow it to grow with your baby’s neck. 1 set is all you need. Free Baby Spoon – Free stuff is always good we are giving out 1 spoon worth Rs 150 with a set of 2 bibs at a great discount. Saves Food and Mess – Beautifully designed pocket catches food before creating a mess. "
   },
   {
     "ID": "BA5",
     "Category": "Baby Care",
     "Image": "baby-care/pacifier1.jpg",
+    "Image2": "baby-care/pacifier2.jpg",
+    "Image3": "baby-care/pacifier3.jpg",
     "Name": "Ultra Air Pacifier",
-    "Price": 6,
-    "Brand": "Johnson"
+    "Price": 6.25,
+    "Brand": "Johnson",
+    "Detail": "The Philips Avent ultra air pacifier for babies 0-6 months is designed with a lightweight, breathable shield for baby's sensitive skin. Four (4) extra large holes in the shield allow for maximum air flow, so skin stays drier while soothing, 84 percent of moms agree. 98 percent of babies accept the nipple, so you can feel confident with this choice. "
   },
   {
     "ID": "FA1",
     "Category": "Fashion",
     "Image": "fashion/girldress1.jpg",
+    "Image2": "fashion/girldress2.jpg",
+    "Image3": "fashion/girldress3.jpg",
     "Name": "Girl Party Dress",
-    "Price": 30,
-    "Brand": "Baby Comfy"
+    "Price": 30.99,
+    "Brand": "Baby Comfy",
+    "Detail": "Fashion trends are not only for the grown ups even the kids also go to do some fashion. Wish karo brings to you this beautiful party wear for your little angel. The dress features comfortable fabric, sleeve less design and fluffy look for your daughter to look like a doll. For the easy of your kid, Wish karo brings this dress in multiple size options to get the perfect fit."
   },
   {
     "ID": "FA2",
     "Category": "Fashion",
     "Image": "fashion/girltshirt1.jpg",
+    "Image2": "fashion/girltshirt2.jpg",
+    "Image3": "fashion/girltshirt3.jpg",
     "Name": "Girl Cotton T-shirt",
-    "Price": 8,
-    "Brand": "Kids"
+    "Price": 8.25,
+    "Brand": "Kids",
+    "Detail": "Dress your little girl with this Dress available on our website. Pair it up with a cute hair accessory and closed shoes for her to shine at the best friend's birthday party!"
   },
   {
     "ID": "FA3",
     "Category": "Fashion",
     "Image": "fashion/Fairydress1.jpg",
+    "Image2": "fashion/Fairydress2.jpg",
+    "Image3": "fashion/Fairydress3.jpg",
     "Name": "Girl Fairy Dress",
-    "Price": 20,
-    "Brand": "Kids"
+    "Price": 20.25,
+    "Brand": "Kids",
+    "Detail": "The set comes in a pack of five multi-coloured T-shirts with interesting prints. Each of them has a different print and colour to distinguish them which eliminates the chance of a monotonous look. All the five T-shirts have round crew-neck design with covered seams that give a snug fit, making them easy to wear. The T-shirts are easy to clean and maintain. They can be normally hand or machine washed at home. They remain fresh and bright even after regular washing."
   },
   {
     "ID": "FA4",
     "Category": "Fashion",
     "Image": "fashion/boytshirt1.jpg",
+    "Image2": "fashion/boytshirt2.jpg",
+    "Image3": "fashion/boytshirt3.jpg",
     "Name": "Boy Cotton T-shirt",
-    "Price": 8,
-    "Brand": "Kids"
+    "Price": 8.99,
+    "Brand": "Kids",
+    "Detail": "Pump up your style statement with this shirt in any formal or casual occasion. Shirts will always come to your rescue when you are confused with your outfit. If you heading for an important meeting, pair this shirt with formal trousers and boots and for a Sunday outing with friends or family, team this shirt with a pair of jeans and sneakers and build your cool and casual personality."
   },
   {
     "ID": "FA5",
     "Category": "Fashion",
     "Image": "fashion/boydenim1.jpg",
+    "Image2": "fashion/boydenim2.jpg",
+    "Image3": "fashion/boydenim3.jpg",
     "Name": "Boy Denim Jumpsuits",
-    "Price": 15,
-    "Brand": "Baby Comfy"
+    "Price": 15.25,
+    "Brand": "Baby Comfy",
+    "Detail": "Cut from the premium quality of cotton rich Denim and biowashed fabric, Denim Dungarees & Jumpsuits are neatly tailored with two side slip pockets, two back pockets, one front pockets and contrast hem fold. It gives a playful, casual look to your little one. HOW TO DRESS : Pair it will single and solid color (preferably white or black) t-shirts. If you're going for outdoor for casual feel and stylish look a pair of sneakers will complement your little ones style."
   },
   {
     "ID": "TO1",
     "Category": "Toys",
     "Image": "toys/lego1.jpg",
+    "Image2": "toys/lego2.jpg",
+    "Image3": "toys/lego3.jpg",
     "Name": "LEGO Construction Bulldozer",
-    "Price": 30,
-    "Brand": "Lego"
+    "Price": 30.25,
+    "Brand": "Lego",
+    "Detail": "The LEGO city work crew are busy and need your help. Set up the cones and sign to warn passersby, climb the tower and swing the wrecking ball to break down the wall – crash! Now jump aboard the mighty bulldozer and operate its big bucket to scoop up the rubble. When you're done, unload the cement mixer from the trailer and get to work on the new wall. A busy day for the workers in LEGO city!."
   },
   {
     "ID": "TO2",
     "Category": "Toys",
     "Image": "toys/piano1.jpg",
+    "Image2": "toys/piano2.jpg",
+    "Image3": "toys/piano3.jpg",
     "Name": "Mini Keys Musical Keyboard",
-    "Price": 45,
-    "Brand": "Kids"
+    "Price": 45.99,
+    "Brand": "Kids",
+    "Detail": "100 tones,10 song bank tune,5 drum pads,simple tone selection,piano,organ tone button.5 drum pads,tapping a pad produces the corresponding drum sound!,easy-to-read display (lcd),specifications:32 mini-size keys,built-in grip for easy portability,10 song bank tunes,melody on/off,100 tones,8-note polyphony (max),50 patterns including 5 indian rythm patterns,speakers (dia x qty)."
   },
   {
     "ID": "TO3",
     "Category": "Toys",
     "Image": "toys/truck1.jpg",
+    "Image2": "toys/truck2.jpg",
+    "Image3": "toys/truck3.jpg",
     "Name": "Monster Truck Cars",
-    "Price": 15,
-    "Brand": "Lego"
+    "Price": 15.25,
+    "Brand": "Lego",
+    "Detail": "This 4 pack monster trucks toys for boys with 360 degree rotation will inspire little one’s creativity, exercise hand-eye coordination and color perception ability."
   },
   {
     "ID": "TO4",
     "Category": "Toys",
     "Image": "toys/barbie1.jpg",
+    "Image2": "toys/barbie2.jpg",
+    "Image3": "toys/barbie3.jpg",
     "Name": "Barbie Doll",
-    "Price": 17,
-    "Brand": "Baby Comfy"
+    "Price": 17.99,
+    "Brand": "Baby Comfy",
+    "Detail": "Dressed in a fabulous outfit – a pink shimmery skirt, polka-dotted top and cute shoes, Barbie will be ready to head out with once your little one styles her hair! Let your girl’s imagination fly as she plays stylist for Barbie!"
   },
   {
     "ID": "TO5",
     "Category": "Toys",
     "Image": "toys/unicorn1.jpg",
+    "Image2": "toys/unicorn2.jpg",
+    "Image3": "toys/unicorn3.jpg",
     "Name": "Unicorn Toy Soft Stuffed",
-    "Price": 10,
-    "Brand": "Lego"
+    "Price": 10.99,
+    "Brand": "Lego",
+    "Detail": "made out of non-toxic polyester and fur fabrics Excellent filling fiber used has good resiliency making it most appropriate for machine or hand wash.Care Instruction: Do not bleach or soak. Do not wash them with the filler."
   },
   {
     "ID": "WE1",
     "Category": "Wellness and Hygiene",
     "Image": "wellness-and-hygiene/diaper1.jpg",
+    "Image2": "wellness-and-hygiene/diaper2.jpg",
+    "Image3": "wellness-and-hygiene/diaper3.jpg",
     "Name": "Diaper",
-    "Price": 18,
-    "Brand": "Pampers"
+    "Price": 18.25,
+    "Brand": "Pampers",
+    "Detail": "The new and improved product design enables a comfortable fit, closer to the baby’s body and a flexible waist band that adapts to baby’s movements for a comfortable fit. A top layer with cotton-like soft material ensure a comfortable night’s sleep. Our pants with fun exterior graphics, fun designs and characters ensure you enjoy with your baby."
   },
   {
     "ID": "WE2",
     "Category": "Wellness and Hygiene",
     "Image": "wellness-and-hygiene/wipe1.jpg",
+    "Image2": "wellness-and-hygiene/wipe2.jpg",
+    "Image3": "wellness-and-hygiene/wipe3.jpg",
     "Name": "Baby Wet Wipes",
-    "Price": 6,
-    "Brand": "Johnson"
+    "Price": 6.99,
+    "Brand": "Johnson",
+    "Detail": "Did you know? Repeated use of cloth and water can erode your baby's skin's natural protective layer. That's why Johnson's Baby Skincare Wipes are specially designed using innovative water-saturated fibre which packs 3 times the weight of moisturizing lotion, to keep your baby's skin soft. Each wipe is enriched with moisturizing ingredients that help protect against redness, rash and soothe skin by removing flakiness of dry and cracked skin. Johnson's Baby Skincare Wipes, as mild to the skin as pure water, provide soft and gentle care for delicate newborn skin. Moms trust Johnson's - always mild, gentle and effective."
   },
   {
     "ID": "WE3",
     "Category": "Wellness and Hygiene",
     "Image": "wellness-and-hygiene/shampoo1.jpg",
+    "Image2": "wellness-and-hygiene/shampoo2.jpg",
+    "Image3": "wellness-and-hygiene/shampoo3.jpg",
     "Name": "Baby Shampoo",
-    "Price": 9,
-    "Brand": "Johnson"
+    "Price": 9.25,
+    "Brand": "Johnson",
+    "Detail": "Johnson's baby shampoo is specially designed to be as gentle and mild to the eyes as pure water. Johnson's baby no more tears shampoo is free of soap. It makes the rinsing of the hair very easy. You can clean the scalp and hair perfectly without leaving any adverse impact on the protective layer. Its anti-fungal and anti-bacterial properties prevent allergies or infections. It’s no more tears formula cleanses gently and easily, leaving your baby’s hair soft and healthy. Moms trust johnson's - always mild, gentle and effective."
   },
   {
     "ID": "WE4",
     "Category": "Wellness and Hygiene",
     "Image": "wellness-and-hygiene/powder1.jpg",
+    "Image2": "wellness-and-hygiene/powder2.jpg",
+    "Image3": "wellness-and-hygiene/powder3.jpg",
     "Name": "Baby Powder",
-    "Price": 6,
-    "Brand": "Johnson"
+    "Price": 6.25,
+    "Brand": "Johnson",
+    "Detail": "We love babies. And we understand how to protect your baby's soft delicate skin. That's why we have designed Johnson's baby powder to help protect baby's skin from excess moisture loss and leave it soft and smooth. Johnson's baby powder helps to eliminate friction while keeping skin cool and comfortable. Unlike adult powders, Johnson's baby powder is safe and is made of millions of tiny round slippery plates that glide over each other to help reduce the irritation caused by friction and thus providing soothing comfort to your baby. With a clean, classic scent, this incredibly soft baby powder formula awakens and stimulates your baby’s senses making your baby feel fresh and letting your baby play happily with everyone."
   },
   {
     "ID": "WE5",
     "Category": "Wellness and Hygiene",
     "Image": "wellness-and-hygiene/mosquito1.jpg",
+    "Image2": "wellness-and-hygiene/mosquito2.jpg",
+    "Image3": "wellness-and-hygiene/mosquito3.jpg",
     "Name": "Mosquito Repellent",
-    "Price": 4,
-    "Brand": "Pampers"
+    "Price": 4.25,
+    "Brand": "Pampers",
+    "Detail": "Once your tiny tot starts to walk or crawl, she will end up exploring each corner of your house and every inch of the local park she is taken to. This is when insect bites are bound to happen. Now you can ensure that your baby has a fun and enjoyable playtime with Mamaearth’s Natural Insect Repellent as their protector. Our insect repellent is 100% natural and is made of Citronella Oil, Lemongrass Oil, And Peppermint Oil, that are proven to repel all kinds of insects away. The Made Safe Certification and all natural ingredients prove that it is the safest and the best insect repellent for your baby."
   }
 ]
