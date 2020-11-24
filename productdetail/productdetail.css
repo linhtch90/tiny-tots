@@ -1,6 +1,10 @@
 .carousel {
   width: 20rem;
-  height: 30rem;
+  height: 34rem;
+}
+
+#myCarousel {
+  width: 100%;
 }
 
 #myCarousel .carousel-indicators {

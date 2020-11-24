@@ -133,7 +133,7 @@ function displayProduct() {
       "<br>" +
       "<br>" +
       '<div class="row w-100">\n' +
-      '  <div class="col-md-5 col-sm-12 mb-4 ml-5 pl-4 justify-content-center align-items-center">\n' +
+      '  <div class="col-md-5 col-sm-12 mb-4 ml-4 pl-4 justify-content-center align-items-center">\n' +
       '     <div id="myCarousel" class="row carousel slide" data-ride="carousel">\n' +
       '  	  <div class="row carousel-inner">\n' +
       '    	   <div class="carousel-item active">\n' +
@@ -141,7 +141,7 @@ function displayProduct() {
       tempVar.Image +
       '">\n' +
       "    		</div>\n" +
-      '    	   <div class="carousel-item img-fluid">\n' +
+      '    	   <div class="carousel-item img-fluid justify-content-center align-items-center">\n' +
       '    	 		<img class="img-fluid d-block w-100" src="./products/images/' +
       tempVar.Image2 +
       '">\n' +
