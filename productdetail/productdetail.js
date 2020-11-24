@@ -132,8 +132,8 @@ function displayProduct() {
       "<br>" +
       "<br>" +
       "<br>" +
-      '<div class="row">\n' +
-      '  <div class=" row col-md-5 col-sm-12 mb-4 ml-5 pl-4 d-flex justify-content-center align-items-center">\n' +
+      '<div class="row w-100">\n' +
+      '  <div class="col-md-5 col-sm-12 mb-4 ml-5 pl-4 justify-content-center align-items-center">\n' +
       '     <div id="myCarousel" class="row carousel slide" data-ride="carousel">\n' +
       '  	  <div class="row carousel-inner">\n' +
       '    	   <div class="carousel-item active">\n' +
@@ -331,6 +331,7 @@ $(document).ready(function () {
 });
 
 function addToCart2() {
+  console.log("addToCart2 is running");
   toastr[
     "success"
   ](
@@ -358,9 +359,10 @@ function addToCart2() {
   if (!exists) {
     cartItems2.push(addItem);
   }
-  checkCart();
   //console.log(cartItems2);
   localStorage["cart-items"] = JSON.stringify(cartItems2);
+  checkCart();
+  //console.log(cartItems2);
 
   displayCartItems();
 }

@@ -244,6 +244,9 @@ function displayCartItems() {
       '        <hr class="mb-4"> \n' +
       '        <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="checkForm()">Place your order</button> \n' +
       "      </form>  <!-- end card section --></br> \n";
+  } else if (sessionStorage["cart-items"] == []) {
+    document.getElementById("Cart").innerHTML =
+      '<div class="container"><h3 class="mb-4">Your Cart have no items</h3></div>';
   }
   checkCart();
 }
