@@ -151,7 +151,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <h1 class="features-title" data-aos="fade-up">Franchise Registration</h1>
                     <p class="franchise-content" data-aos="zoom-in">Imagine owning your own boutique!</p>
-                    <form id="franchise-registration-form" action="" class="d-flex flex-column justify-content-center align-items-center" data-aos="fade-left">
+                    <form id="franchise-registration-form" action="" class="d-flex flex-column justify-content-center align-items-center needs-validation" novalidate data-aos="fade-left">
                         <input type="text" class="form-control" id="franchiseFirstName" aria-describedby="franchiseFirstName" placeholder="First Name" required>
                         <input type="text" class="form-control" id="franchiseLastName" aria-describedby="franchiseLastName" placeholder="Last Name" required>
                         <input type="text" class="form-control" id="franchiseAddress" aria-describedby="franchiseAddress" placeholder="Address" required>
@@ -384,6 +384,28 @@
     <!-- User-defined JS -->
     <script src="./franchise/js/franchise.js"></script>
     <script src="./home/js/login.js"></script>
+
+    <!-- Franchise Registration Form Validation -->
+    <script>
+      (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+    </script>
+
 </body>
 
 </html>
