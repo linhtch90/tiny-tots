@@ -491,9 +491,11 @@
             <div class="tab-content">
               <!-- BEGIN Log In Tab -->
               <div role="tabpanel" class="tab-pane active" id="logInTab">
-                <form class="needs-validation" novalidate>
+                <form id="login-validation" novalidate>
                   <div class="form-group">
-                    <label for="login-modal-username">Username</label>
+                    <label id="username-login-label" for="login-modal-username"
+                      >Username (*)</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -503,12 +505,11 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">
-                      Please enter your username.
-                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="login-modal-password">Password</label>
+                    <label id="password-login-label" for="login-modal-password"
+                      >Password (*)</label
+                    >
                     <input
                       type="password"
                       class="form-control"
@@ -517,15 +518,13 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">
-                      Please enter your password.
-                    </div>
                   </div>
                   <div class="d-flex justify-content-center align-items-center">
                     <button
                       type="submit"
                       class="btn login-button mr-sm-4"
                       id="login-modal-submit"
+                      onclick="loginValidate()"
                     >
                       Login
                     </button>
@@ -536,9 +535,13 @@
 
               <!-- BEGIN Registration Tab -->
               <div role="tabpanel" class="tab-pane" id="registerTab">
-                <form class="needs-validation" novalidate>
+                <form id="register-validation" novalidate>
                   <div class="form-group">
-                    <label for="register-modal-username">Username</label>
+                    <label
+                      id="username-register-label"
+                      for="register-modal-username"
+                      >Username (*)</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -548,12 +551,11 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">
-                      Please enter your username.
-                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="register-modal-email">Email</label>
+                    <label id="email-register-label" for="register-modal-email"
+                      >Email (*)</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -563,10 +565,13 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">Please enter your email.</div>
                   </div>
                   <div class="form-group">
-                    <label for="register-modal-password">Password</label>
+                    <label
+                      id="pass1-register-label"
+                      for="register-modal-password"
+                      >Password (*)</label
+                    >
                     <input
                       type="password"
                       class="form-control"
@@ -575,12 +580,13 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">
-                      Please enter your password.
-                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="register-modal-password2">Password</label>
+                    <label
+                      id="pass2-register-label"
+                      for="register-modal-password2"
+                      >Retype Password (*)</label
+                    >
                     <input
                       type="password"
                       class="form-control"
@@ -589,9 +595,6 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">
-                      Please enter your password again.
-                    </div>
                   </div>
                   <div class="d-flex justify-content-center align-items-center">
                     <button

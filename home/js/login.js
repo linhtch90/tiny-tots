@@ -9,6 +9,16 @@ const loginButton = document.getElementById("user-login-button");
 const registerSubmit = document.getElementById("register-modal-submit");
 const logoutButton = document.getElementById("user-logout-button");
 
+const usernameLoginLabel = document.getElementById("username-login-label");
+const passwordLoginLabel = document.getElementById("password-login-label");
+
+const usernameRegisterLabel = document.getElementById(
+  "username-register-label"
+);
+const emailRegisterLabel = document.getElementById("email-register-label");
+const pass1RegisterLabel = document.getElementById("pass1-register-label");
+const pass2RegisterLabel = document.getElementById("pass2-register-label");
+
 // Prevent default activities of submit button
 loginSubmit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -27,10 +37,11 @@ const login = () => {
   loginSubmit.onclick = () => {
     username = document.getElementById("login-modal-username").value;
     password = document.getElementById("login-modal-password").value;
-    isLogin = true;
+
     if (username !== "" && password !== "") {
       console.log(username);
       console.log(password);
+      isLogin = true;
       localStorage.setItem("userName", username);
       localStorage.setItem("password", password);
       localStorage.setItem("loginStatus", isLogin);
@@ -38,16 +49,32 @@ const login = () => {
       logoutButton.innerHTML = "<i class='far fa-user'></i> " + username;
       logoutButton.style.display = "block";
       loginModal.style.display = "none";
+    } else if (username === "") {
+      usernameLoginLabel.innerHTML =
+        "<span style='color: red;'>Please enter your username</span>";
+    } else if (password === "") {
+      passwordLoginLabel.innerHTML =
+        "<span style='color: red;'>Please enter your password</span>";
     }
   };
 
   registerSubmit.onclick = () => {
     username = document.getElementById("register-modal-username").value;
     password = document.getElementById("register-modal-password").value;
-    isLogin = true;
-    if (username !== "" && password !== "") {
+    const emailRegister = document.getElementById("register-modal-email").value;
+    const pass2Register = document.getElementById("register-modal-password2")
+      .value;
+
+    if (
+      username !== "" &&
+      password !== "" &&
+      pass2Register === password &&
+      emailRegister.includes("@") &&
+      emailRegister.includes(".")
+    ) {
       console.log(username);
       console.log(password);
+      isLogin = true;
       localStorage.setItem("userName", username);
       localStorage.setItem("password", password);
       localStorage.setItem("loginStatus", isLogin);
@@ -55,6 +82,21 @@ const login = () => {
       logoutButton.innerHTML = "<i class='far fa-user'></i> " + username;
       logoutButton.style.display = "block";
       loginModal.style.display = "none";
+    } else if (username === "") {
+      usernameRegisterLabel.innerHTML =
+        "<span style='color: red;'>Please enter your username</span>";
+    } else if (password === "") {
+      pass1RegisterLabel.innerHTML =
+        "<span style='color: red;'>Please enter your password</span>";
+    } else if (pass2Register === "") {
+      pass2RegisterLabel.innerHTML =
+        "<span style='color: red;'>Please enter your password again</span>";
+    } else if (pass2Register !== password) {
+      pass2RegisterLabel.innerHTML =
+        "<span style='color: red;'>Password does not match</span>";
+    } else if (!(emailRegister.includes("@") && emailRegister.includes("."))) {
+      emailRegisterLabel.innerHTML =
+        "<span style='color: red;'>Invalid email</span>";
     }
   };
 };
@@ -105,30 +147,3 @@ const logout = () => {
   logoutButton.style.display = "none";
   loginModal.style.display = "none";
 };
-
-// Form validation
-(function loginValidate() {
-  "use strict";
-  window.addEventListener(
-    "load",
-    function () {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName("needs-validation");
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener(
-          "submit",
-          function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add("was-validated");
-          },
-          false
-        );
-      });
-    },
-    false
-  );
-})();
