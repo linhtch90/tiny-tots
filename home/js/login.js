@@ -85,6 +85,9 @@ const login = () => {
     } else if (username === "") {
       usernameRegisterLabel.innerHTML =
         "<span style='color: red;'>Please enter your username</span>";
+    } else if (!(emailRegister.includes("@") && emailRegister.includes("."))) {
+      emailRegisterLabel.innerHTML =
+        "<span style='color: red;'>Invalid email</span>";
     } else if (password === "") {
       pass1RegisterLabel.innerHTML =
         "<span style='color: red;'>Please enter your password</span>";
@@ -94,9 +97,6 @@ const login = () => {
     } else if (pass2Register !== password) {
       pass2RegisterLabel.innerHTML =
         "<span style='color: red;'>Password does not match</span>";
-    } else if (!(emailRegister.includes("@") && emailRegister.includes("."))) {
-      emailRegisterLabel.innerHTML =
-        "<span style='color: red;'>Invalid email</span>";
     }
   };
 };
