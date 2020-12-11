@@ -115,7 +115,7 @@ listProducts.push(
     "TO1",
     "Toys",
     "toys/lego1.jpg",
-    "LEGO Construction Bulldozer",
+    "LEGO Construction",
     "30.25",
     "Lego"
   )
@@ -125,7 +125,7 @@ listProducts.push(
     "TO2",
     "Toys",
     "toys/piano1.jpg",
-    "Mini Keys Musical Keyboard",
+    "Mini Musical Keyboard",
     "45.99",
     "Kids"
   )
